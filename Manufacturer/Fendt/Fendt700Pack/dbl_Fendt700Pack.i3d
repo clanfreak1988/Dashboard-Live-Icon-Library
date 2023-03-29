@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dbl_Fendt700Pack" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="dbl_Fendt700Pack.png"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dbl_Fendt700_mat" materialId="4" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="1 0 1 0"/>
+      <CustomParameter name="blinkSpeed" value="7 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dbl_Fendt700Pack.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="dbl_Fendt700Pack" nodeId="11">
+        <Shape shapeId="1" name="dbl_Fendt700_90_5_Wert" translation="-0.250455 0.0005 0.283" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="dbl_Fendt700_90_90_Wert" translation="0.247665 0.0005 0.283" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="dbl_Fendt700_180_50_Wert" translation="0.33401 0.0005 -0.234211" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="dbl_Fendt700_180_40_Wert" translation="-0.0001 0.0005 -0.234211" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="dbl_Fendt700_180_5_Wert" translation="-0.3351 0.0005 -0.258676" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

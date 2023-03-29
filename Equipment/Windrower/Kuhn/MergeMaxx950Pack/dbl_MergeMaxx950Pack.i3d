@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dbl_MergeMaxx950Pack" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="dbl_MergeMaxx950Pack.png"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dbl_MergeMaxx950_mat" materialId="4" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="1 0 1 0"/>
+      <CustomParameter name="blinkSpeed" value="7 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dbl_MergeMaxx950Pack.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="dbl_MergeMaxx950Pack_180_-50_Wert" nodeId="10">
+        <Shape shapeId="1" name="dbl_MergeMaxx950Folded" translation="-0.275734 0.01 -0.141803" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="dbl_MergeMaxx950Left" translation="0.22 0.01 -0.32" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="dbl_MergeMaxx950Right" translation="0.22 0.01 0.021131" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="dbl_MergeMaxx950Middle" translation="-0 0.01 0.35" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
