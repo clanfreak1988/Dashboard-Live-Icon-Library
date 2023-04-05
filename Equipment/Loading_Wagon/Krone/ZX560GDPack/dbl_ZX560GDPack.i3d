@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dbl_ZX560GDPack" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="dbl_ZX560GDPack_diffuse.png"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dbl_ZX560GD_mat" materialId="4" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="1 0 1 0"/>
+      <CustomParameter name="blinkSpeed" value="7 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dbl_ZX560GDPack.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="dbl_ZX560GDPack" nodeId="12">
+        <Shape shapeId="1" name="dbl_ZX560GD_90_5_Wert" translation="-0.215 0.01 -0.377" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="dbl_ZX560GD_COCL" translation="-0.215 0.01 -0.144" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="dbl_ZX560GDPickUpCOOP" translation="-0.215 0.01 0.087715" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="dbl_ZX560GDPickUpCOCL" translation="-0.215 0.01 0.323638" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="dbl_ZX560GDUnloadCOOP" translation="0.38 0.01 -0.173" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="dbl_ZX560GDUnloadCOCL" translation="0.169905 0.01 -0.173" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
