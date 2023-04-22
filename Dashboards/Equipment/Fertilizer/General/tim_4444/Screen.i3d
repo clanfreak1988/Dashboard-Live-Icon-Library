@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tabPad_horizontal" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="1" filename="Duengestreuer Terminal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Duenger" materialId="4" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="lightControl" value="0.5 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Screen.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="screen" translation="-0.0108976 -0.00763094 -0.00179767" rotation="90 -90 0" scale="0.26 1 0.2" nodeId="7" materialIds="4" distanceBlending="false"/>
+  </Scene>
+
+</i3D>

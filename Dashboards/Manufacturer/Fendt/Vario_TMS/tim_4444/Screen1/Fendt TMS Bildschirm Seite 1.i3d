@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ingame" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/fs19support/shaders/dashboardSymbolsShader.xml"/>
+    <File fileId="2" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="3" filename="$data/shared/assets/dashboardSymbols_diffuse.png"/>
+    <File fileId="4" filename="$data/shared/default_normal.dds"/>
+    <File fileId="5" filename="$data/shared/default_vmask.dds"/>
+    <File fileId="8" filename="../../Eigene Dashboards/Fendt Vario TMS Bildschirme/Screen1/Textures/Ausgeklappt.dds"/>
+    <File fileId="7" filename="../../Eigene Dashboards/Fendt Vario TMS Bildschirme/Screen1/Textures/Eingeklappt.dds"/>
+    <File fileId="1" filename="Fendt Vario TMS 1 Seite.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Ausgeklappt" materialId="4" customShaderId="6">
+      <Texture fileId="8"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+    </Material>
+    <Material name="dashboardSymbols_mat" materialId="5" customShaderId="6">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+    </Material>
+    <Material name="Eingeklappt" materialId="6" customShaderId="6">
+      <Texture fileId="7"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+    </Material>
+    <Material name="Screen1" materialId="7" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="lightControl" value="0.3 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Fendt TMS Bildschirm Seite 1.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Screen1" translation="-0.0324912 -0.0311783 0.0344483" nodeId="15">
+        <Shape shapeId="1" name="Screen1" translation="-0.485 0.959044 0.0740139" rotation="-124.138 44.122 179.998" scale="0.116 1 0.088" nodeId="16" materialIds="7" distanceBlending="false"/>
+        <Shape shapeId="2" name="toolFrontLowered" translation="-0.491029 0.973114 0.0809827" rotation="-124.781 44.3401 -179.94" scale="0.4 1 0.4" clipDistance="10" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="2" name="toolFrontLowered" translation="-0.49809 0.987987 0.0881914" rotation="-124.107 44.3401 -179.94" scale="0.4 1 0.4" clipDistance="10" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="3" name="toolBackLowered" translation="-0.505777 0.972282 0.0657148" rotation="-124.044 44.3212 178.926" scale="0.4 1 0.4" clipDistance="10" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="3" name="toolBackLowered" translation="-0.512658 0.987598 0.0730538" rotation="-124.044 44.3212 178.926" scale="0.4 1 0.4" clipDistance="10" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="toolFrontIsFolded" translation="-0.480293 0.98874 0.10593" rotation="-126.647 44.8035 178.849" scale="0.025 1 0.025" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="toolFrontIsFolded" translation="-0.473001 0.973859 0.0980213" rotation="-126.05 45.2424 179.693" scale="0.025 1 0.025" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="toolFrontIsUnfolded" translation="-0.465956 0.988577 0.120023" rotation="-124.53 45.0537 -179.694" scale="0.025 1 0.025" clipDistance="30" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="toolFrontIsUnfolded" translation="-0.458757 0.973404 0.112339" rotation="-124.875 44.8142 179.817" scale="0.025 1 0.025" clipDistance="30" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="frontPTO1" translation="-0.493987 0.94307 0.0492897" rotation="-125.055 44.7301 178.913" scale="5 1 5" clipDistance="10" nodeId="25" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="frontPTO1" translation="-0.483712 0.942875 0.0594707" rotation="-125.055 44.7301 178.913" scale="5 1 5" clipDistance="10" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <TransformGroup name="KR_filllevel_liters" translation="-0.502638 0.951421 0.0482155" rotation="146.556 44.3149 179.01" clipDistance="15" nodeId="27"/>
+        <Shape shapeId="6" name="handBrake" translation="-0.517673 0.957898 0.0406525" rotation="-124.762 43.318 179.272" clipDistance="10" nodeId="28" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <TransformGroup name="Tempomat" translation="-0.452913 0.943535 0.0890358" rotation="148.628 43.6497 -178.28" nodeId="29"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

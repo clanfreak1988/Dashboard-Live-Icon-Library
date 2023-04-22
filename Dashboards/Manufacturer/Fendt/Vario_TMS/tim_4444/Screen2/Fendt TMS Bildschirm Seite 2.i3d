@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ingame" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/fs19support/shaders/dashboardSymbolsShader.xml"/>
+    <File fileId="2" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="6" filename="$data/shared/assets/dashboardSymbols_diffuse.png"/>
+    <File fileId="4" filename="$data/shared/default_normal.dds"/>
+    <File fileId="5" filename="$data/shared/default_vmask.dds"/>
+    <File fileId="1" filename="Fendt Vario TMS 2 Seite.png"/>
+    <File fileId="3" filename="Textures/Grau.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Hydraulik" materialId="4" customShaderId="7">
+      <Texture fileId="6"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="baseColor" value="0.01 0.01 0.01 0"/>
+      <CustomParameter name="emitColor" value="1 0 0 0"/>
+    </Material>
+    <Material name="loadBar_mat" materialId="5" alphaBlending="true" customShaderId="2">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="lightControl" value="0.3 0 0 0"/>
+    </Material>
+    <Material name="Screen2" materialId="6" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="lightControl" value="0.3 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Fendt TMS Bildschirm Seite 2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Screen 2" nodeId="12">
+        <Shape shapeId="1" name="Screen2" translation="-0.519105 0.925897 0.109109" rotation="-124.138 44.122 179.998" scale="0.116 1 0.088" nodeId="13" materialIds="6" distanceBlending="false"/>
+        <Shape shapeId="2" name="fillLevelBar" translation="-0.52 0.903851 0.0869748" rotation="134.029 -23.9323 115.206" scale="0.8 0.5 1" clipDistance="30" nodeId="14" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="3" name="toolFrontLowered" translation="-0.563982 0.95494 0.0920974" rotation="-124.781 44.3401 -179.94" scale="0.4 1 0.4" clipDistance="10" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="toolBackLowered" translation="-0.558005 0.939823 0.0833542" rotation="-124.044 44.3212 178.926" scale="0.4 1 0.4" clipDistance="10" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <TransformGroup name="KR_filllevel_liters" translation="-0.517232 0.926763 0.110866" rotation="146.556 44.3149 179.01" clipDistance="15" nodeId="17"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
