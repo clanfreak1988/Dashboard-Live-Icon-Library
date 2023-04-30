@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Page1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/fs19support/shaders/dashboardSymbolsShader.xml"/>
+    <File fileId="2" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="8" filename="$data/shared/assets/dashboardSymbols_diffuse.dds"/>
+    <File fileId="4" filename="$data/shared/default_normal.dds"/>
+    <File fileId="10" filename="$data/shared/default_specular.dds"/>
+    <File fileId="5" filename="$data/shared/default_vmask.dds"/>
+    <File fileId="11" filename="$data/vehicles/fendt/vario700/vario700InteriorLCDDecal_diffuse.dds"/>
+    <File fileId="3" filename="tex/Ausgeklappt.dds"/>
+    <File fileId="7" filename="tex/Eingeklappt.dds"/>
+    <File fileId="1" filename="tex/Fendt One Oberseite 1.dds"/>
+    <File fileId="9" filename="tex/GPS aktiv.dds"/>
+    <File fileId="12" filename="../tex/Grey.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="aktiv" materialId="5" customShaderId="6">
+      <Texture fileId="9"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="Ausgeklappt" materialId="6" customShaderId="6">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="dashboardSymbols_mat" materialId="7" customShaderId="6" shadingRate="2x2">
+      <Texture fileId="8"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="Eingeklappt" materialId="9" customShaderId="6">
+      <Texture fileId="7"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="lambert1" materialId="10" alphaBlending="true" customShaderId="2" customShaderVariation="staticLight">
+      <Texture fileId="11"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="loadBar_mat" materialId="11" alphaBlending="true" customShaderId="2">
+      <Texture fileId="12"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="lightControl" value="0.3 0 0 0"/>
+    </Material>
+    <Material name="mat_16x16_emitter" materialId="12" alphaBlending="true" customShaderId="6">
+      <Texture fileId="8"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="Page1" materialId="8" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="lightControl" value="0.2 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Page1.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Screen1" nodeId="26">
+        <Shape shapeId="1" name="screen" translation="7.60671e-05 0.00418317 0.000645506" rotation="-100.209 50.7908 176.079" scale="0.27 1 0.18" nodeId="27" materialIds="8" distanceBlending="false"/>
+        <Shape shapeId="2" name="Ausgeklappt" translation="0.0357119 0.0165302 0.046737" rotation="-100.261 50.721 175.602" scale="0.04 1 0.04" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="Ausgeklappt" translation="-0.0380497 0.0221518 -0.0432643" rotation="-100.261 50.721 175.602" scale="0.04 1 0.04" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="Eingeklappt" translation="-0.0392267 0.0447924 -0.040515" rotation="-101.07 50.5116 175.769" scale="0.04 1 0.04" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="Eingeklappt" translation="0.0348234 0.039314 0.0495975" rotation="-101.07 50.5116 175.769" scale="0.04 1 0.04" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="toolBackLowered" translation="0.0745986 0.013409 0.0942333" rotation="-99.1781 50.3237 175.592" scale="0.47 1 0.47" clipDistance="10" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="3" name="toolBackLowered" translation="-0.0761602 0.0239945 -0.0910316" rotation="-99.1781 50.3237 175.592" scale="0.47 1 0.47" clipDistance="10" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="toolFrontLowered" translation="0.0736436 0.0473741 0.0994153" rotation="-101.963 50.1246 176.001" scale="0.47 1 0.47" clipDistance="10" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="toolFrontLowered" translation="-0.0775077 0.0585092 -0.0861831" rotation="-101.963 50.1246 176.001" scale="0.47 1 0.47" clipDistance="10" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="frontPTO1" translation="0.00430104 -0.0155202 0.00149234" rotation="-102.491 51.0481 176.082" scale="5 1 5" clipDistance="10" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="frontPTO1" translation="-0.0144084 -0.0140472 -0.0216547" rotation="-102.491 51.0481 176.082" scale="5 1 5" clipDistance="10" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="2" name="GPS aktiv" translation="-0.0271117 0.0615197 -0.0232687" rotation="-100.436 55.0606 173.646" scale="0.01 1 0.01" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="fourWheel" translation="-0.011181 -0.043624 -0.0238785" rotation="-100.951 51.062 175.439" scale="0.7 0.8 0.7" clipDistance="10" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="7" name="diffLockFront" translation="-0.0192365 -0.0426137 -0.0343092" rotation="-97.7155 50.9743 177.08" scale="0.7 0.8 0.7" clipDistance="10" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="8" name="diffLockBack" translation="-0.00232865 -0.0444048 -0.0132571" rotation="-102.631 50.3895 175.672" scale="0.7 0.8 0.7" clipDistance="10" nodeId="41" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="9" name="I_Cruise" translation="0.0215019 -0.0163891 0.0227216" rotation="-98.8287 50.343 176.571" scale="3 1 3" clipDistance="20" nodeId="42" materialIds="12" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="iconDefaultLight02_decals" translation="0.0801893 -0.0390358 0.0903859" rotation="11.9855 2.62825 -13.8701" clipDistance="30" nodeId="43" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="10" name="iconDefaultLight02_decals" translation="0.0644982 -0.0328775 0.0726872" rotation="11.9855 2.62825 -13.8701" clipDistance="30" nodeId="44" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="10" name="iconDefaultLight02_decals" translation="0.0625482 -0.0182025 0.0731519" rotation="11.9855 2.62825 -13.8701" clipDistance="30" nodeId="45" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="10" name="iconDefaultLight02_decals" translation="0.0493718 -0.0147037 0.057555" rotation="138.775 73.1526 -13.2623" clipDistance="30" nodeId="46" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="10" name="iconDefaultLight02_decals" translation="0.0456885 -0.029488 0.0498816" rotation="138.775 73.1526 -13.2623" clipDistance="30" nodeId="47" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <TransformGroup name="filllevelT1" translation="-0.0755841 -0.00710469 -0.0976091" rotation="169.875 49.7219 176.717" nodeId="48"/>
+        <TransformGroup name="filllevelT2" translation="-0.0749315 -0.0237431 -0.100294" rotation="170.1 49.7556 177.012" nodeId="49"/>
+        <TransformGroup name="percentT2" translation="-0.0528371 -0.0314255 -0.0755136" rotation="170.1 49.7556 177.012" nodeId="50"/>
+        <TransformGroup name="percentT1" translation="-0.0541962 -0.0145346 -0.0736196" rotation="170.1 49.7556 177.012" nodeId="51"/>
+        <TransformGroup name="filllevelSeed" translation="-0.0607393 -0.0465091 -0.0880889" rotation="170.1 49.7556 177.012" scale="1.02002 1.02002 1.02002" nodeId="52"/>
+        <TransformGroup name="filllevelFertilizer" translation="-0.0598541 -0.057511 -0.0893225" rotation="170.1 49.7556 177.012" scale="1.02002 1.02002 1.02002" nodeId="53"/>
+        <TransformGroup name="Hours" translation="-0.0156108 -0.0607087 -0.0348796" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="54"/>
+        <TransformGroup name="Gears" translation="0.0235073 -0.0646474 0.0134495" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="55"/>
+        <TransformGroup name="speed" translation="-0.015388 -0.0301191 -0.0280758" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="56"/>
+        <TransformGroup name="GPS Lane" translation="-0.00240362 0.00861393 -0.00349458" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="57"/>
+        <TransformGroup name="Cruisecontrol" translation="0.0664493 -0.0855837 0.0629599" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="58"/>
+        <TransformGroup name="fuelconsumption" translation="0.00878206 -0.0828411 -0.00893944" rotation="169.187 51.0734 175.836" scale="1.02002 1.02002 1.02002" nodeId="59"/>
+        <Shape shapeId="11" name="fillLevelBar" translation="0.0109929 -0.0617221 0.000542065" rotation="170.621 50.4317 176.385" scale="0.258 0.14 1" clipDistance="30" nodeId="60" materialIds="11" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <TransformGroup name="motortemp" translation="0.044798 0.0746807 0.0687374" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="61"/>
+        <TransformGroup name="time" translation="0.0252662 0.0757705 0.0444196" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="62"/>
+        <TransformGroup name="rpm" translation="0.0194389 -0.0488979 0.0116943" rotation="169.797 51.1646 176.62" scale="1.02002 1.02002 1.02002" nodeId="63"/>
+        <Shape shapeId="12" name="iconBeaconLight_decals" translation="0.056617 -0.0156871 0.0662259" clipDistance="30" nodeId="64" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="10" name="iconDefaultLight02_decals" translation="0.0822878 -0.0469628 0.092139" clipDistance="30" nodeId="65" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="42">
+      <Attribute name="MaxHandle" type="integer" value="42"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>
