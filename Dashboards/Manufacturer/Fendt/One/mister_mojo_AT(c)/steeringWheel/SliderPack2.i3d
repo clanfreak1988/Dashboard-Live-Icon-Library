@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="SliderPack2.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="textures/sliderLine.dds"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dbl_FillLevel_mat" materialId="15" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="SliderPack2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="dbl_LoadBarRPMP3_SW" translation="0.002 -0.0911577 0.0336384" rotation="0 -0 -90" scale="0.5 1 0.5" nodeId="1270" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="dbl_LoadBarSpeedP3_SW" translation="0.00199997 0.0912241 0.0336375" rotation="0 -0 -90" scale="0.5 1 0.5" nodeId="1272" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dbl_LevelBarTemperaturP3_SW" translation="0.00199991 -0.101456 -0.0252432" rotation="0 2.03555e-13 -90" nodeId="1280" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dbl_LevelBarBreakAirP3_SW" translation="0.0019998 -0.0823089 -0.0252434" rotation="0 4.07111e-13 -90" nodeId="1281" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dbl_LevelBarDefP3_SW" translation="0.0019998 0.0824525 -0.0252434" rotation="0 6.10666e-13 -90" nodeId="1282" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dbl_LevelFuelP3_SW" translation="0.0019998 0.0999806 -0.0252434" rotation="0 1.01778e-12 -90" nodeId="1283" materialIds="15" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>
