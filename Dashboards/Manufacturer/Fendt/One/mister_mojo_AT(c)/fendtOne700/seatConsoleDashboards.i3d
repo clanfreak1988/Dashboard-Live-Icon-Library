@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="seatConsoleDashboards.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="../textures/dashboardSymbolsAdd_diffuse.png"/>
+    <File fileId="17" filename="../textures/fendtOneBrantnerDDTrailerUTIB_diffuse.png"/>
+    <File fileId="14" filename="../textures/fendtOneFertilizerPackUTIB_diffuse.png"/>
+    <File fileId="16" filename="../textures/fendtOneGrasPackUTIB_diffuse.png"/>
+    <File fileId="15" filename="../textures/fendtOneManurePackUTIB_diffuse.png"/>
+    <File fileId="13" filename="../textures/fendtOnePoettingerUTIB_diffuse.png"/>
+    <File fileId="10" filename="../textures/fendtOneSeatConsoleLCDBasicDM_diffuse.png"/>
+    <File fileId="1" filename="../textures/fendtOneSeatConsoleLCDBasic_diffuse.png"/>
+    <File fileId="21" filename="../textures/fendtOneSeatConsoleLCDFLDM_diffuse.png"/>
+    <File fileId="20" filename="../textures/fendtOneSeatConsoleLCDFL_diffuse.png"/>
+    <File fileId="12" filename="../textures/fendtOneSeatConsoleLCDGPSDM_diffuse.png"/>
+    <File fileId="11" filename="../textures/fendtOneSeatConsoleLCDGPS_diffuse.png"/>
+    <File fileId="19" filename="../textures/fendtOneSeatConsoleLCDUTDM_diffuse.png"/>
+    <File fileId="18" filename="../textures/fendtOneSeatConsoleLCDUT_diffuse.png"/>
+    <File fileId="5" filename="../textures/sliderLine.dds"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="8" filename="$data/shared/assets/dashboardSymbols_diffuse.png"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="6" filename="$data/shared/default_specular.dds"/>
+    <File fileId="3" filename="$data/shared/default_vmask.png"/>
+    <File fileId="9" filename="$data/vehicles/fendt/vario700/vario700InteriorLCDDecal_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dbl_FillLevel_mat" materialId="5" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="5"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="dbl_FillLevel_mat" materialId="6" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="5"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="7" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="8" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="10"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="9" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="20"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="10" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="21"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="11" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="11"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="12" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="12"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="13" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="18"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtDisplayLCD_mat" materialId="14" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="19"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneBrantnerDDTrailer_mat" materialId="15" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="17"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneBrantnerDDTrailer_mat" materialId="16" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="17"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneFertilizerUTIB_mat" materialId="17" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="14"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+    </Material>
+    <Material name="fendtOneFertilizerUTIB_mat" materialId="18" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="14"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneKroneGrasUTIB_mat" materialId="19" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="16"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneKroneGrasUTIB_mat" materialId="20" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="16"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneManureUTIB_mat" materialId="21" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="15"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+    </Material>
+    <Material name="fendtOneManureUTIB_mat" materialId="22" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="15"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOnePoettingerUTIB_mat" materialId="23" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="13"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="mat_16x16_emitter" materialId="24" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="lightControl" value="1 0 1 0"/>
+      <CustomParameter name="blinkSpeed" value="7 1 0 1"/>
+    </Material>
+    <Material name="mat_16x16_emitter" materialId="25" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="8"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="lightControl" value="1 0 1 0"/>
+      <CustomParameter name="blinkSpeed" value="7 1 0 1"/>
+    </Material>
+    <Material name="pasted__dbl_FillLevel_mat" materialId="26" customShaderId="4" customShaderVariation="slider">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="vario700InteriorLCDDecal_mat" materialId="27" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="9"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="seatConsoleDashboards.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="seatDashboards" translation="-0.573 0.493 0.354" rotation="-82.216 38.581 8.79" nodeId="227">
+        <TransformGroup name="basicDashboard" nodeId="228">
+          <TransformGroup name="basicIcon" nodeId="229">
+            <Shape shapeId="1" name="dbl_beaconLightP1_SC" translation="0.002 -0.084 -0.015" rotation="180 -0 90" scale="1.3 1 1.3" nodeId="230" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="dbl_defaultLightFrontP1_SC" translation="0.002 -0.131 -0.042" rotation="180 -0 90" scale="1.3 1 1.3" nodeId="231" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront00P1_SC" translation="0.002 -0.105677 -0.017" rotation="180 -0 90" scale="1.3 1 1.3" nodeId="232" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront01P1_SC" translation="0.002 -0.099 -0.02" rotation="-180 6.56749e-07 90" scale="1.3 1 1.3" nodeId="233" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront02P1_SC" translation="0.00199996 -0.0990001 -0.032" rotation="-180 9.85123e-07 90" scale="1.3 1 1.3" nodeId="234" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront03P1_SC" translation="0.00199997 -0.106 -0.033" rotation="-180 1.64187e-06 90" scale="1.3 1 1.3" nodeId="235" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront04P1_SC" translation="0.00199997 -0.101 -0.0385572" rotation="-180 1.97025e-06 90" scale="1.3 1 1.3" nodeId="236" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dbl_workLightBack00P1_SC" translation="0.002 -0.074 -0.019" rotation="180 -0 90" scale="1.3 1 1.3" nodeId="237" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dbl_workLightBack01P1_SC" translation="0.00199997 -0.072 -0.028" rotation="-180 6.56749e-07 90" scale="1.3 1 1.3" nodeId="238" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dbl_workLightBack02P1_SC" translation="0.00199994 -0.064 -0.032" rotation="-180 9.85123e-07 90" scale="1.3 1 1.3" nodeId="239" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="dbl_LoadBarSpeedP1_SC" translation="0.00200002 -0.000344387 0.0545294" rotation="4.26887e-07 -4.26887e-07 -90" scale="0.34 1 0.34" nodeId="240" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersSpeedP1_SC" translation="0.002 0 0.052" rotation="90 0 90" nodeId="241"/>
+            <Shape shapeId="6" name="dbl_CruiseControl01P1_SC" translation="0.002 -0.034 0.062" rotation="180 -3.84198e-06 90" scale="2 1 2" clipDistance="20" nodeId="242" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="dbl_CruiseControl02P1_SC" translation="0.002 0.032 0.062" rotation="-180 -4.69575e-06 90" scale="2 1 2" clipDistance="20" nodeId="243" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersCruiseControl01P1_SC" translation="0.00200003 -0.034 0.047" rotation="90 0 90" nodeId="244"/>
+            <TransformGroup name="dbl_NumbersCruiseControl02P1_SC" translation="0.002 0.032 0.047" rotation="90 0 90" nodeId="245"/>
+            <Shape shapeId="8" name="dbl_FueltankP1_SC" translation="0.002 -0.018 0.00929356" rotation="-180 -4.49355e-06 90" scale="1.9 1 1.9" clipDistance="20" nodeId="246" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersFuelContentP1_SC" translation="0.002 -0.013 0.00686565" rotation="90 0 90" nodeId="247"/>
+            <TransformGroup name="dbl_CruiseControlIconRot" translation="0.002 -0.000458657 0.0548163" rotation="45 -0 0" nodeId="248">
+              <Shape shapeId="9" name="dbl_CruiseControlRotP1_SC" translation="5.16167e-17 0 0" clipDistance="20" nodeId="249" materialIds="27" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Shape shapeId="10" name="dbl_frontPtoP1_SC" translation="0.002 -0.074 0.0162342" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="250" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="dbl_backPtoP1_SC" translation="0.002 0.111356 0.016681" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="251" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontPtoRpmP1_SC" translation="0.002 -0.053 0.00858957" rotation="90 0 90" clipDistance="15" nodeId="252"/>
+            <TransformGroup name="dbl_backPtoRpmP1_SC" translation="0.002 0.133475 0.00887498" rotation="90.0001 0 89.9997" clipDistance="15" nodeId="253"/>
+            <Shape shapeId="11" name="dbl_frontDiffP1_SC" translation="0.00199999 0.008 0.028" rotation="180 0 90" scale="3.8 1 3.8" clipDistance="20" nodeId="254" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_frontDiffLockP1_SC" translation="0.00200001 0.008 0.0346776" rotation="180 -0 90" clipDistance="20" nodeId="255" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="dbl_awdDiffP1_SC" translation="0.002 0.022 0.028" rotation="180 0 90" scale="3.8 1 3.8" clipDistance="20" nodeId="256" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_awdFrontDiffLockP1_SC" translation="0.00200002 0.022 0.0347432" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="257" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_awdMiddleDiffLockP1_SC" translation="0.00199999 0.022 0.0282706" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="258" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_awdBackDiffLockP1_SC" translation="0.00199999 0.022 0.0216878" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="259" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="dbl_backDiffP1_SC" translation="0.00200001 0.036 0.028" rotation="180 0 90" scale="3.8 1 3.8" clipDistance="20" nodeId="260" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_backDiffLockP1_SC" translation="0.002 0.0354365 0.0216427" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="261" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="dbl_frontPLifterP1_SC" translation="0.001 -0.131 0.06" rotation="-180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="262" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="dbl_frontPLifterLevelbarP1_SC" translation="0.001 -0.123665 0.0600007" rotation="-90 -90 0" nodeId="263" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontPLifterPercP1_SC" translation="0.00199999 -0.049 0.059" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="264"/>
+            <Shape shapeId="17" name="dbl_backPLifterP1_SC" translation="0.001 0.055 0.06" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="265" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="dbl_backPLifterLevelbarP1_SC" translation="0.000999987 0.0630001 0.0600004" rotation="-90 -90 0" nodeId="266" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backPLifterPercP1_SC" translation="0.00199999 0.137 0.059" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="267"/>
+            <Shape shapeId="18" name="dbl_frontFoldedP1_SC" translation="0.002 -0.065 0.0363583" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="268" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="dbl_frontFoldingStateP1_SC" translation="0.002 -0.065 0.0359698" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="269" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="dbl_frontUnfoldingP1_SC" translation="0.002 -0.065 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="270" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontFoldingStatePercP1_SC" translation="0.00199999 -0.049 0.023" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="271"/>
+            <Shape shapeId="18" name="dbl_backFoldedP1_SC" translation="0.002 0.121 0.0363075" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="272" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="dbl_backFoldingStateP1_SC" translation="0.002 0.121 0.0359171" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="273" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="dbl_backUnfoldingP1_SC" translation="0.002 0.121 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="274" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backFoldingStatePercP1_SC" translation="0.00199999 0.137 0.023" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="275"/>
+            <Shape shapeId="21" name="dbl_selectFendtP1_SC" translation="0.002 0.022 0.00940858" rotation="180 0 90" scale="1.9 1 1.9" clipDistance="20" nodeId="276" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="dbl_selectFront1P1_SC" translation="0.002 0.013 0.008" rotation="180 0 90" scale="1.5 1 1.5" clipDistance="20" nodeId="277" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="dbl_selectFront2P1_SC" translation="0.002 0.00579347 0.008" rotation="180 0 90" scale="1.5 1 1.5" clipDistance="20" nodeId="278" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="dbl_selectBack1P1_SC" translation="0.002 0.0314166 0.008" rotation="180 0 90" scale="1.5 1 1.5" clipDistance="20" nodeId="279" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="dbl_selectBack2P1_SC" translation="0.002 0.0386028 0.008" rotation="180 0 90" scale="1.5 1 1.5" clipDistance="20" nodeId="280" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="dbl_adBlueP1_SC" translation="0.002 -0.041 0.009" rotation="180 0 90" scale="1.8 1 1.8" clipDistance="20" nodeId="281" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersAdBlueContentP1_SC" translation="0.002 -0.0364914 0.00686565" rotation="90 0 90" nodeId="282"/>
+            <Shape shapeId="25" name="dbl_workTimeP1_SC" translation="0.002 -0.034 0.03" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="283" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersWorkTimeP1_SC" translation="0.002 -0.034 0.016" rotation="90 0 90" nodeId="284"/>
+            <Shape shapeId="26" name="dbl_fronSlipP1_SC" translation="0.002 -0.012 0.03" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="285" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersSlipP1_SC" translation="0.002 -0.012 0.016" rotation="90 0 90" nodeId="286"/>
+            <Shape shapeId="6" name="dbl_CruiseControl01BP1_SC" translation="0.002 0.061 -0.005" rotation="180 -3.84198e-06 90" scale="2.5 1 2.5" clipDistance="20" nodeId="287" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="dbl_CruiseControl02BP1_SC" translation="0.002 0.061 -0.031" rotation="-180 -4.69575e-06 90" scale="2.5 1 2.5" clipDistance="20" nodeId="288" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersCruiseControl01BP1_SC" translation="0.00200002 0.063 -0.019" rotation="90 0 90" nodeId="289"/>
+            <TransformGroup name="dbl_NumbersCruiseControl02BP1_SC" translation="0.002 0.063 -0.045" rotation="90 0 90" nodeId="290"/>
+          </TransformGroup>
+          <TransformGroup name="basicScreen" nodeId="291">
+            <Shape shapeId="27" name="dashboardDisplayBasic_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="292" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="dashboardDisplayBasicDM_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="293" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="basicTaskTopIcon" nodeId="294">
+            <Shape shapeId="6" name="dbl_CruiseControl01T1_SC" translation="0.002 -0.135 -0.0830002" rotation="-180 2.84591e-07 90" scale="1.5 1 1.5" clipDistance="20" nodeId="295" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="dbl_CruiseControl02T1_SC" translation="0.002 -0.135 -0.083" rotation="180 0 90" scale="1.5 1 1.5" visibility="false" clipDistance="20" nodeId="296" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="28" name="dbl_CruiseControl03T1_SC" translation="0.002 -0.135 -0.0830002" rotation="-180 2.84591e-07 90" scale="1.5 1 1.5" visibility="false" clipDistance="20" nodeId="297" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersCruiseControl01T1_SC" translation="0.002 -0.122 -0.085" rotation="90 4.26887e-07 90" nodeId="298"/>
+            <TransformGroup name="dbl_NumbersCruiseControl02T1_SC" translation="0.00199993 -0.122 -0.085" rotation="90 4.26887e-07 90" nodeId="299"/>
+            <TransformGroup name="dbl_NumbersCruiseControl03T1_SC" translation="0.00199993 -0.122 -0.085" rotation="90 4.26887e-07 90" nodeId="300"/>
+            <TransformGroup name="dbl_NumbersTimeT1_SC" translation="0.002 -0.035 0.084" rotation="90 0 90" nodeId="301"/>
+            <TransformGroup name="dbl_NumbersFuelUsageT1_SC" translation="0.00199888 -0.058 -0.084" rotation="90.0001 0 89.9997" clipDistance="15" nodeId="302"/>
+            <TransformGroup name="dbl_outsideTempT1_SC" translation="0.002 -0.083 0.084" rotation="90 0 90" nodeId="303"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gpsDashboard" nodeId="304">
+          <TransformGroup name="gpsIcon" nodeId="305">
+            <TransformGroup name="dbl_numberFieldP2_SC" translation="0.002 -0.015 0.058" rotation="90 -1.53679e-05 90" nodeId="306"/>
+            <Shape shapeId="29" name="dbl_gpsLanePlusP2_SC" translation="0.002 0.00400002 0.0603293" rotation="180 0 90" clipDistance="20" nodeId="307" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="dbl_gpsLaneMinusP2_SC" translation="0.002 0.004 0.0602558" rotation="180 0 90" clipDistance="20" nodeId="308" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_numberGPSLaneP2_SC" translation="0.002 0.011 0.058" rotation="90 0 90" nodeId="309"/>
+            <TransformGroup name="dbl_compassGPSP2_SC" translation="0.002 0.09 -0.067" rotation="90 0 90" nodeId="310"/>
+            <TransformGroup name="dbl_numberCompassGPSP2_SC" translation="0.002 0.08 -0.067" rotation="90 0 90" nodeId="311"/>
+            <Shape shapeId="31" name="dbl_gpsSatellitP2_SC" translation="0.002 -0.1 -0.062" rotation="180 0 90" scale="3 1 3" clipDistance="20" nodeId="312" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="32" name="dbl_gpsActiveP2_SC" translation="0.002 -0.084 -0.0625974" rotation="180 0 90" scale="2.8 1 2.8" clipDistance="20" nodeId="313" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_gpsWidthP2_SC" translation="0.00200002 -0.04 0.071" rotation="90 0 90" nodeId="314"/>
+            <Shape shapeId="33" name="dbl_hlmOnOffP2_SC" translation="0.00200001 5.2e-05 0.073" rotation="180 0 90" scale="1.5 1 1.5" clipDistance="20" nodeId="315" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="34" name="dbl_hlmFieldP2_SC" translation="0.00114195 2.48198e-11 0.073" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="316" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="35" name="dbl_hlmHeadlandP2_SC" translation="0.00128388 2.48175e-11 0.073" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="317" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="dbl_gpsWidthArrayRightP2_SC" translation="0.00199999 -0.02 0.0736537" rotation="180 0 90" scale="1.2 1 1" clipDistance="20" nodeId="318" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="dbl_gpsWidthArrayLeftP2_SC" translation="0.00200001 -0.06 0.0739455" rotation="4.26905e-07 0 -90.0001" scale="1.2 1 1" clipDistance="20" nodeId="319" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="37" name="dbl_gpsContourLaneRightP2_SC" translation="0.002 -0.015 0.0736073" rotation="180 0 90" clipDistance="20" nodeId="320" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="37" name="dbl_gpsContourLaneLeftP2_SC" translation="0.002 -0.065 0.0736073" rotation="0 0 -90" clipDistance="20" nodeId="321" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="dbl_gpsArrayCompassP2_SC" translation="0.00199999 -0.00122362 -0.0629997" rotation="-180 0 90" scale="2 1 2" clipDistance="20" nodeId="322" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="dbl_gpsLaneArrayRightP2_SC" translation="0.00199999 0.025 -0.062" rotation="180 0 90" scale="1.5 1 1.5" clipDistance="20" nodeId="323" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="dbl_gpsLaneArrayLeftP2_SC" translation="0.00200001 -0.025 -0.062" rotation="4.26905e-07 0 -90.0001" scale="1.5 1 1.5" clipDistance="20" nodeId="324" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="37" name="dbl_gpsLaneRightP2_SC" translation="0.002 0.03 -0.062" rotation="180 0 90" scale="2 1 2" clipDistance="20" nodeId="325" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="37" name="dbl_gpsLaneLeftP2_SC" translation="0.002 -0.03 -0.062" rotation="0 0 -90" scale="2 1 2" clipDistance="20" nodeId="326" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="39" name="dbl_fieldModeOnP2_SC" translation="0.001 -0.126 0.021" rotation="180 0 90" nodeId="327" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="dbl_fieldModeOffP2_SC" translation="0.001 -0.126 0.021" rotation="180 0 90" nodeId="328" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="41" name="dbl_gpsModeOffP2_SC" translation="0.001 -0.126 0.002" rotation="180 0 90" nodeId="329" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="42" name="dbl_gpsModeOnP2_SC" translation="0.001 -0.126 0.002" rotation="180 0 90" nodeId="330" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="gpsScreen" nodeId="331">
+            <Shape shapeId="27" name="dashboardDisplayGPS_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="332" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="dashboardDisplayGPSDM_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="333" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="utDashboard" nodeId="334">
+          <TransformGroup name="isobusUTPack" nodeId="335">
+            <TransformGroup name="poettingerUT1IB" nodeId="336">
+              <TransformGroup name="poettingerIconSet" rotation="-4.26887e-07 -0 3.41509e-06" nodeId="337">
+                <Shape shapeId="15" name="dbl_backPLifterUT1_SC" translation="0.00228343 0.055 0.0600002" rotation="180 3.41509e-07 90" scale="2.5 1 2.5" clipDistance="20" nodeId="338" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="16" name="dbl_frontPLifterLevelbarUT1_SC" translation="0.00227439 0.0630001 0.0600002" rotation="-90 -90 0" nodeId="339" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_frontPLifterPercUT1_SC" translation="0.00229309 0.137 0.0590003" rotation="90 8.53774e-07 90" clipDistance="15" nodeId="340"/>
+                <Shape shapeId="18" name="dbl_frontFoldedUT1_SC" translation="0.00235019 0.121 0.0362704" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="341" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="19" name="dbl_frontFoldingStateUT1_SC" translation="0.00230756 0.121 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="342" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="20" name="dbl_frontUnfoldingUT1_SC" translation="0.00230756 0.121 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="343" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_frontFoldingStatePercUT1_SC" translation="0.00233992 0.137 0.023" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="344"/>
+                <Shape shapeId="10" name="dbl_frontPtoUT1_SC" translation="0.00239166 0.111424 0.0167097" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="345" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_frontPtoRpmUT1_SC" translation="0.00233955 0.133 0.00858957" rotation="90 0 90" clipDistance="15" nodeId="346"/>
+                <TransformGroup name="ut1SowingPart" nodeId="347">
+                  <Shape shapeId="43" name="dbl_seed0UT1_SC" translation="0.00222322 -0.095 0.059" rotation="-180 8.53774e-07 90" nodeId="348" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="43" name="dbl_seed1UT1_SC" translation="0.00216037 -0.13 -0.048" rotation="-180 1.28066e-06 90" nodeId="349" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="44" name="dbl_seedLevelbarUT1_SC" translation="0.00224236 -0.0949828 -0.0175822" rotation="1.02711e-05 0 -90" nodeId="350" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="45" name="dbl_fertilizer0UT1_SC" translation="0.0022821 0.001 0.059" rotation="-180 4.26887e-07 90" nodeId="351" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="45" name="dbl_fertilizer1UT1_SC" translation="0.00229102 -0.011 -0.048" rotation="-180 8.53774e-07 90" nodeId="352" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="44" name="dbl_fertilizerLevelbarUT1_SC" translation="0.00224236 0.000912727 -0.0175822" rotation="1.02711e-05 0 -90" nodeId="353" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="46" name="dbl_workModeOnOffUT1_SC" translation="0.00215954 -0.123985 0.055" rotation="-180 4.26887e-07 90" nodeId="354" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="47" name="dbl_workLightOnOffUT1_SC" translation="0.00215108 -0.124 0.0335311" rotation="-180 4.26887e-07 90" nodeId="355" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="48" name="dbl_trackMarkerLeftUT1_SC" translation="0.00234837 -0.124 0.0123027" rotation="-180 4.26887e-07 90" nodeId="356" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="49" name="dbl_trackMarkerRightUT1_SC" translation="0.00248631 0.03 0.012398" rotation="-180 4.26887e-07 90" nodeId="357" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="50" name="dbl_seedSectionLeftUT1_SC" translation="0.00232715 -0.124 -0.00884124" rotation="-180 4.26887e-07 90" nodeId="358" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="51" name="dbl_seedSectionRightUT1_SC" translation="0.00247731 0.03 -0.00883552" rotation="-180 4.26887e-07 90" nodeId="359" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="52" name="dbl_seedTrackOnOffUT1_SC" translation="0.00231638 -0.124 -0.0301207" rotation="-180 4.26887e-07 90" nodeId="360" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="53" name="dbl_seedFertilizerOnOffUT1_SC" translation="0.00261806 0.03 -0.0297816" rotation="-180 4.26887e-07 90" nodeId="361" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="54" name="dbl_needleRotUT1_SC" translation="0.00264428 -0.0468364 -0.0651573" rotation="180 0 90" nodeId="362" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="55" name="dbl_growMinusUT1_SC" translation="0.00213669 0.0299334 0.0546967" rotation="180 0 90" nodeId="363" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="56" name="dbl_growPlusUT1_SC" translation="0.00215214 0.0298886 0.0336931" rotation="180 0 90" nodeId="364" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_seedTypeTXTUT1_SC" translation="0.00229436 -0.135 -0.065" rotation="90 0 90" nodeId="365"/>
+                  <TransformGroup name="dbl_fertilizerTXTUT1_SC" translation="0.00229436 -0.015 -0.068" rotation="90 0 90" nodeId="366"/>
+                </TransformGroup>
+                <TransformGroup name="ut1ProSeedPart" nodeId="367">
+                  <Shape shapeId="57" name="dbl_proSeedDrillUT1_SC" translation="0.00267557 0.093 -0.06" rotation="180 0 90" visibility="false" nodeId="368" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="58" name="dbl_proSeedSeederUT1_SC" translation="0.00245303 0.093 -0.06" rotation="180 0 90" nodeId="369" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="59" name="dbl_proSeedSpeakerUT1_SC" translation="0.00256223 0.129485 -0.062" rotation="180 0 90" nodeId="370" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="60" name="dbl_proSeedSectionUT1_SC" translation="0.00227423 0.129 -0.0438654" rotation="180 0 90" nodeId="371" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="61" name="dbl_proSeedFertilizerOnOffUT1_SC" translation="0.00228406 0.0570851 -0.0435555" rotation="180 0 90" nodeId="372" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="62" name="dbl_proSeedTrackOnOffUT1_SC" translation="0.00259026 0.056742 -0.061251" rotation="180 0 90" nodeId="373" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="63" name="dbl_proSeedTrackMarkerLeft1UT1_SC" translation="0.00229063 0.072 -0.045" rotation="180 0 90" scale="2 1 2" clipDistance="20" nodeId="374" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="64" name="dbl_proSeedTrackMarkerRight1UT1_SC" translation="0.00299997 0.114275 -0.045" rotation="180 0 90" scale="2 1 2" clipDistance="20" nodeId="375" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_proSeedWorkModeUT1_SC" translation="0.00229436 0.0644863 -0.026" rotation="90 0 90" nodeId="376"/>
+                  <TransformGroup name="dbl_proSeedDistanceUT1_SC" translation="0.00226844 0.093 -0.026" rotation="90 0 90" nodeId="377"/>
+                  <TransformGroup name="dbl_proSeedTranceDriveUT1_SC" translation="0.00227129 0.122 -0.026" rotation="90 0 90" nodeId="378"/>
+                  <TransformGroup name="dbl_proSeedTranceFullUT1_SC" translation="0.00226832 0.125 -0.026" rotation="90 0 90" nodeId="379"/>
+                  <TransformGroup name="dbl_proSeedSeedUsageUT1_SC" translation="0.00233961 0.065 -0.014487" rotation="90 0 90" nodeId="380"/>
+                  <TransformGroup name="dbl_proSeedSeedHaUT1_SC" translation="0.00231704 0.088 -0.0145195" rotation="90 0 90" nodeId="381"/>
+                  <TransformGroup name="dbl_proSeedAreaFieldUT1_SC" translation="0.00230981 0.095 -0.0145148" rotation="90 0 90" nodeId="382"/>
+                  <TransformGroup name="dbl_proSeedTimeUseUT1_SC" translation="0.00229058 0.110927 -0.0145296" rotation="90 0 90" nodeId="383"/>
+                  <Shape shapeId="65" name="dbl_proSeedFullSeedUT1_SC" translation="0.00269828 0.0930568 -0.0675999" rotation="180 0 90" scale="10.5 1 0.4" clipDistance="20" nodeId="384" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="65" name="dbl_proSeedLeftSeedUT1_SC" translation="0.00259623 0.0802026 -0.0675999" rotation="180 0 90" scale="5.25 1 0.4" clipDistance="20" nodeId="385" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="65" name="dbl_proSeedRightSeedUT1_SC" translation="0.00246921 0.105938 -0.0675999" rotation="180 0 90" scale="5.25 1 0.4" clipDistance="20" nodeId="386" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="65" name="dbl_proSeedDriveLane1UT1_SC" translation="0.00252905 0.087 -0.0675999" rotation="180 0 90" scale="0.5 1 0.8" clipDistance="20" nodeId="387" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="65" name="dbl_proSeedDriveLane2UT1_SC" translation="0.00252911 0.0989999 -0.0675995" rotation="-180 4.26887e-07 90" scale="0.5 1 0.8" clipDistance="20" nodeId="388" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="poettingerScreen" nodeId="389">
+                <Shape shapeId="66" name="dbl_poettingerUTIBScreenUT1_SC" translation="0.002 -0.047 0.00353974" rotation="179.6 0 90" nodeId="390" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="67" name="dbl_backPowerLiftScreenUT1_SC" translation="0.002 0.093 0.042" rotation="179.6 0 90" nodeId="391" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="68" name="dbl_proSeedScreenUT1_SC" translation="0.00213452 0.093 -0.0345016" rotation="179.6 0 90" nodeId="392" materialIds="23" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="amazoneUT2IB" nodeId="393">
+              <TransformGroup name="amazoneFTIconSet" rotation="-4.26887e-07 -0 3.41509e-06" nodeId="394">
+                <Shape shapeId="69" name="dbl_reseatUT2_SC" translation="0.0015796 0.0103269 0.0547418" rotation="179.6 0 90" nodeId="395" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="70" name="dbl_jobUT2_SC" translation="0.00147039 0.0327346 0.0548193" rotation="179.6 4.26887e-07 90" nodeId="396" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="71" name="dbl_autoModeUT2_SC" translation="0.00155526 0.0102809 0.0319753" rotation="179.6 0 90" nodeId="397" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="72" name="dbl_sprayerOnOffUT2_SC" translation="0.00158659 0.0325746 0.0320406" rotation="179.6 4.26887e-07 90" nodeId="398" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="73" name="dbl_sprayAmountFullUT2_SC" translation="0.00144178 0.0326619 0.00939226" rotation="179.6 4.26887e-07 90" nodeId="399" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="74" name="dbl_sprayAmountPlusUT2_SC" translation="0.00176245 0.0102129 -0.0133828" rotation="179.6 0 90" nodeId="400" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="75" name="dbl_sprayAmountMinusUT2_SC" translation="0.00180116 0.0327114 -0.0132736" rotation="179.6 4.26887e-07 90" nodeId="401" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="76" name="dbl_spraySectionLeftPlusUT2_SC" translation="0.00189185 0.0103058 -0.036283" rotation="179.6 0 90" nodeId="402" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="77" name="dbl_spraySectionRightPlusUT2_SC" translation="0.00198207 0.0324077 -0.0359889" rotation="179.6 4.26887e-07 90" nodeId="403" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="78" name="dbl_spraySectionLeftMinusUT2_SC" translation="0.00209757 0.0102656 -0.0590756" rotation="179.6 0 90" nodeId="404" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="79" name="dbl_spraySectionRightMinusUT2_SC" translation="0.00206936 0.0326992 -0.0587843" rotation="179.6 0 90" nodeId="405" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="80" name="dbl_fertilizerFillLevelUT2_SC" translation="0.00200002 -0.0698892 0.00633766" rotation="180 0 90" nodeId="406" materialIds="26" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="81" name="dbl_spayerAutoModeUT2_SC" translation="0.00161316 -0.0699347 -0.00166806" rotation="180 0 90" nodeId="407" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="82" name="dbl_spayerPartLeftUT2_SC" translation="0.00167414 -0.0701852 -0.02" rotation="180 0 90" nodeId="408" materialIds="17" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="83" name="dbl_spayerPartRightUT2_SC" translation="0.00170112 -0.069703 -0.0198576" rotation="180 0 90" nodeId="409" materialIds="17" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_numberSpeedUT2_SC" translation="0.002 -0.0903667 0.059" rotation="90 0 90" nodeId="410"/>
+                <TransformGroup name="dbl_nChangedPrecFarmUT2_SC" translation="0.002 -0.087 0.047" rotation="90 0 90" nodeId="411"/>
+                <TransformGroup name="dbl_nActualPrecFarmUT2_SC" translation="0.002 -0.013 0.059" rotation="90 0 90" nodeId="412"/>
+                <TransformGroup name="dbl_nTargetPrecFarmUT2_SC" translation="0.002 -0.013 0.047" rotation="90 0 90" nodeId="413"/>
+                <Shape shapeId="31" name="dbl_gpsSatellitUT2_SC" translation="0.00219555 -0.057725 -0.062444" rotation="180 0 90" scale="3 1 3" clipDistance="20" nodeId="414" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="32" name="dbl_gpsActiveUT2_SC" translation="0.00200001 -0.0800513 -0.0625232" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="415" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="84" name="dbl_CruiseControlUT2_SC" translation="0.00200003 -0.126793 -0.0582621" rotation="180 0 90" scale="2 1 2" clipDistance="20" nodeId="416" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_numberCruiseControlUT2_SC" translation="0.002 -0.126951 -0.069" rotation="90 0 90" nodeId="417"/>
+                <Shape shapeId="85" name="dbl_steeringAxisOnOffUT2_SC" translation="0.00210801 -0.0127486 -0.062266" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="418" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="12" name="dbl_lookingAxisUT2_SC" translation="0.00215426 -0.0126531 -0.0655058" rotation="180 0 90" clipDistance="20" nodeId="419" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="86" name="dbl_workLightUT2_SC" translation="0.002 -0.0346324 -0.0622727" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="420" materialIds="24" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="amazoneFTScreen" nodeId="421">
+                <Shape shapeId="87" name="dbl_amazoneFTScreenUT2_SC" translation="0.00142221 -0.0467321 0.00278208" rotation="179.6 0 90" nodeId="422" materialIds="18" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="kuhnUT3IB" nodeId="423">
+              <TransformGroup name="kuhnAxisIconSet" rotation="-4.26887e-07 -0 3.41509e-06" nodeId="424">
+                <Shape shapeId="88" name="dbl_startStopUT3_SC" translation="0.00104203 -0.12352 0.0571976" rotation="179.6 0 90" nodeId="425" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="89" name="dbl_sectionLeftRightUT3_SC" translation="0.00113388 -0.123677 0.0388273" rotation="179.6 0 90" nodeId="426" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="90" name="dbl_sectionLeftProcUT3_SC" translation="0.00130475 -0.123524 0.0205232" rotation="179.6 0 90" scale="1.00018 1.00018 1.00018" nodeId="427" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="91" name="dbl_sectionLeftPlusUT3_SC" translation="0.00142973 -0.123653 0.00186889" rotation="179.6 0 90" nodeId="428" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="92" name="dbl_sectionLeftMinusUT3_SC" translation="0.00157742 -0.123516 -0.0162654" rotation="179.6 0 90" nodeId="429" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="93" name="dbl_emptyFieldUT3_SC" translation="0.00171716 -0.123666 -0.0347014" rotation="179.6 0 90" nodeId="430" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="94" name="dbl_homeUT3_SC" translation="0.00109391 0.0302355 0.057312" rotation="179.6 0 90" nodeId="431" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="95" name="dbl_sectionC100ProcUT3_SC" translation="0.00120953 0.030288 0.0390938" rotation="179.6 0 90" nodeId="432" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="96" name="dbl_sectionMinusUT3_SC" translation="0.00135778 0.0303896 0.0204833" rotation="179.6 0 90" nodeId="433" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="97" name="dbl_sectionRightPlusUT3_SC" translation="0.00147264 0.0303928 0.00219232" rotation="179.6 0 90" nodeId="434" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="98" name="dbl_sectionRightMinusUT3_SC" translation="0.00161346 0.0302526 -0.0161745" rotation="179.6 0 90" nodeId="435" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="99" name="dbl_sectionFullUT3_SC" translation="0.00174333 0.0302739 -0.034545" rotation="179.6 0 90" nodeId="436" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="100" name="dbl_spreaderLeftUT3_SC" translation="0.00170646 -0.07341 -0.0365559" rotation="179.6 0 90" nodeId="437" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="101" name="dbl_spreaderRightUT3_SC" translation="0.00176406 -0.0198024 -0.036523" rotation="179.6 0 90" nodeId="438" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_numberFillLevel00UT3_SC" translation="0.00222999 -0.00531725 -0.062" rotation="90 0 90" nodeId="439"/>
+                <TransformGroup name="dbl_numberFillLevel01UT3_SC" translation="0.00219241 -0.0466971 -0.067" rotation="90 0 90" nodeId="440"/>
+                <TransformGroup name="dbl_numberSpeedUT3_SC" translation="0.00214819 -0.088279 -0.062" rotation="90 0 90" nodeId="441"/>
+                <Shape shapeId="102" name="dbl_spreaderAutoModeUT3_SC" translation="0.00200001 -0.0611823 0.0391533" rotation="180 0 90" clipDistance="20" nodeId="442" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_nActualPrecFarmingUT3_SC" translation="0.002 -0.0444072 0.037" rotation="90 0 90" nodeId="443"/>
+                <TransformGroup name="dbl_nTargetPrecFarmingUT3_SC" translation="0.002 -0.017 0.037" rotation="90 0 90" nodeId="444"/>
+                <TransformGroup name="dbl_nChangedPrecFarmingUT3_SC" translation="0.002 -0.082 0.037" rotation="90 0 90" nodeId="445"/>
+                <TransformGroup name="dbl_applicationRatePrecFarmingUT3_SC" translation="0.002 -0.081 0.041" rotation="90 0 90" nodeId="446"/>
+                <TransformGroup name="dbl_soilTypePrecFarmingUT3_SC" translation="0.002 -0.102 0.046" rotation="90.5345 -0 90" nodeId="447"/>
+                <Shape shapeId="31" name="dbl_gpsSatellitUT3_SC" translation="0.00200001 0.00856147 0.0602184" rotation="180 0 90" scale="2 1 2" clipDistance="20" nodeId="448" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="32" name="dbl_gpsActiveUt3_SC" translation="0.00199996 -0.002 0.0600002" rotation="-180 4.26887e-07 90" scale="2 1 2" clipDistance="20" nodeId="449" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="37" name="dbl_gpsMarkerRightUT3_SC" translation="0.00200001 -0.027 0.058" rotation="180 0 90" clipDistance="20" nodeId="450" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="37" name="dbl_gpsMarkerLeftUT3_SC" translation="0.00200001 -0.067 0.058" rotation="3.84213e-06 0 -90" clipDistance="20" nodeId="451" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_gpsWidthUT3_SC" translation="0.00215482 -0.047 0.0549327" rotation="90.5345 -0 90" nodeId="452"/>
+              </TransformGroup>
+              <TransformGroup name="kuhnAxxisScreen" nodeId="453">
+                <Shape shapeId="103" name="dbl_kuhnAxisScreenUT3_SC" translation="0.00128402 -0.0465873 0.00299855" rotation="179.6 -0 90" nodeId="454" materialIds="18" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="bergmannUT4IB" nodeId="455">
+              <TransformGroup name="bergmannTSWIconSet" nodeId="456">
+                <Shape shapeId="104" name="dbl_workModeOnOffUT4_SC" translation="0.0012538 0.01 0.0546092" rotation="179.6 0 90" nodeId="457" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="105" name="dbl_steeringAxisOnOffUT4_SC" translation="0.00122067 0.0322283 0.0544914" rotation="179.6 0 90" nodeId="458" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="12" name="dbl_lookingAxisUT4_SC" translation="0.00138669 0.0352422 0.0546097" rotation="179.6 -0 90" scale="0.9 1 0.9" clipDistance="20" nodeId="459" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="106" name="dbl_liftAxisUpUT4_SC" translation="0.00138346 0.01 0.0319714" rotation="179.6 0 90" nodeId="460" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="107" name="dbl_liftAxisDownUT4_SC" translation="0.00139927 0.0322797 0.0320273" rotation="179.6 0 90" nodeId="461" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="108" name="dbl_tailgateUpUT4_SC" translation="0.00148558 0.01 0.00925574" rotation="179.6 0 90" nodeId="462" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="109" name="dbl_tailgateDownUT4_SC" translation="0.0016118 0.0323875 0.0092284" rotation="179.6 0 90" nodeId="463" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="110" name="dbl_distributorFlapUpUT4_SC" translation="0.00168004 0.01 -0.0134909" rotation="179.6 0 90" nodeId="464" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="111" name="dbl_distributorFlapDownUT4_SC" translation="0.00165967 0.03247 -0.0135264" rotation="179.6 0 90" nodeId="465" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="112" name="dbl_distributorFlapLeftUT4_SC" translation="0.00180198 0.01 -0.0360676" rotation="179.6 0 90" nodeId="466" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="113" name="dbl_distributorFlapRightUT4_SC" translation="0.00199103 0.0325043 -0.0359876" rotation="179.6 0 90" nodeId="467" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="114" name="dbl_streetModeUT4_SC" translation="0.00213106 0.01 -0.0587918" rotation="179.6 0 90" nodeId="468" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="115" name="dbl_fieldModeUT4_SC" translation="0.00207139 0.0325332 -0.0587574" rotation="179.6 0 90" nodeId="469" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="116" name="dbl_defaultLightUT4_SC" translation="0.00181229 -0.124791 -0.0399087" rotation="179.6 0 90" scale="2 1 2" clipDistance="20" nodeId="470" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="117" name="dbl_workLightBackUT4_SC" translation="0.00185451 -0.105466 -0.0397476" rotation="179.6 0 90" scale="2 1 2" clipDistance="20" nodeId="471" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="118" name="dbl_beaconLightUT4_SC" translation="0.00186296 -0.0864906 -0.0397132" rotation="179.6 0 90" scale="2 1 2" clipDistance="20" nodeId="472" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_numberFillLevelUT4_SC" translation="0.002 -0.108 -0.0096318" rotation="90 0 90" nodeId="473"/>
+                <TransformGroup name="dbl_applicationRatePrecFarmingUT4_SC" translation="0.002 -0.031 -0.0372159" rotation="90 0 90" nodeId="474"/>
+                <TransformGroup name="dbl_soilTypePrecFarmingUT4_SC" translation="0.002 -0.065 -0.051" rotation="90 0 90" nodeId="475"/>
+                <TransformGroup name="dbl_nActualPrecFarmingUT4_SC" translation="0.002 -0.073 -0.068" rotation="90 0 90" nodeId="476"/>
+                <TransformGroup name="dbl_nTargetPrecFarmingUT4_SC" translation="0.002 -0.038 -0.068" rotation="90 0 90" nodeId="477"/>
+              </TransformGroup>
+              <TransformGroup name="bergmannTSWScreen" nodeId="478">
+                <Shape shapeId="103" name="dbl_bergmannTSWScreenUT4_SC" translation="0.00134506 -0.0466414 0.00275892" rotation="179.6 0 90" nodeId="479" materialIds="22" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="kotteGarantUT5IB" nodeId="480">
+              <TransformGroup name="kotteGarantPTIconSet" nodeId="481">
+                <Shape shapeId="119" name="dbl_streetModeUT5_SC" translation="0.00199997 0.0104382 0.0540001" rotation="-180 4.26887e-07 90" nodeId="482" materialIds="21" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="120" name="dbl_inputModeUT5_SC" translation="0.00200002 0.0322829 0.0540001" rotation="-180 4.26887e-07 90" nodeId="483" materialIds="21" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="121" name="dbl_camModeUT5_SC" translation="0.00200002 0.0104402 0.031708" rotation="-180 4.26887e-07 90" nodeId="484" materialIds="21" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="122" name="dbl_fieldModeUT5_SC" translation="0.002 0.0322843 0.0318373" rotation="180 0 90" nodeId="485" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="123" name="dbl_fieldModeOnUT5_SC" translation="0.002 0.0318778 0.0243335" rotation="180 0 90" nodeId="486" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="124" name="dbl_fieldModeOffUT5_SC" translation="0.00182423 0.032 0.0242872" rotation="-180 4.26887e-07 90" nodeId="487" materialIds="21" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="125" name="dbl_backHitchUT5_SC" translation="0.002 0.0102428 0.00935924" rotation="180 0 90" nodeId="488" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="126" name="dbl_backAttachmenthUT5_SC" translation="0.00199999 0.0322197 0.0092949" rotation="180 0 90" nodeId="489" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="127" name="dbl_steeringAxisUT5_SC" translation="0.00199999 0.0101588 -0.0136687" rotation="180 0 90" nodeId="490" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="12" name="dbl_steeringAxisLockedUT5_SC" translation="0.00222251 0.0101568 -0.0182942" rotation="0 -0 -90" scale="0.9 1 0.9" clipDistance="20" nodeId="491" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="128" name="dbl_rearLinkageUT5_SC" translation="0.00199999 0.0324376 -0.0136545" rotation="-180 4.26887e-07 90" nodeId="492" materialIds="21" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="129" name="dbl_startModeUT5_SC" translation="0.00199998 0.0322381 -0.0363563" rotation="180 0 90" nodeId="493" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="130" name="dbl_endModeUT5_SC" translation="0.00199994 0.0322584 -0.0591433" rotation="-180 4.26887e-07 90" nodeId="494" materialIds="21" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="131" name="dbl_workLightUT5_SC" translation="0.00199997 0.0101735 -0.0592736" rotation="180 0 90" nodeId="495" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="132" name="dbl_flowWheel00UT5_SC" translation="0.002 -0.0580243 0.0335209" rotation="-4.26887e-07 -0 3.41509e-06" nodeId="496" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="132" name="dbl_flowWheel01UT5_SC" translation="0.00199997 -0.0580243 0.028" rotation="-4.26887e-07 -0 6.83019e-06" nodeId="497" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="132" name="dbl_flowWheel02UT5_SC" translation="0.00199997 -0.104 0.0335209" rotation="-4.26887e-07 -0 6.83019e-06" nodeId="498" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="132" name="dbl_flowWheel03UT5_SC" translation="0.00199994 -0.104 0.028" rotation="-8.53774e-07 -0 1.02453e-05" nodeId="499" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="133" name="dbl_fillLevelBarUT5_SC" translation="0.002 -0.0500353 0.0261728" rotation="0 -90 -90" nodeId="500" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_fillLevelPercUT5_SC" translation="0.00200001 -0.006 0.029" rotation="90 5.12264e-06 90" nodeId="501"/>
+                <TransformGroup name="dbl_fillLevelUT5_SC" translation="0.00200003 -0.0318844 0.0292054" rotation="90 5.12264e-06 90" nodeId="502"/>
+                <Shape shapeId="134" name="dbl_slurrySpreaderFoldetUT5_SC" translation="0.002 -0.0700001 -0.0527849" rotation="-180 4.26887e-07 90" nodeId="503" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="135" name="dbl_slurrySpreaderFoldingUT5_SC" translation="0.002 -0.07 -0.054" rotation="180 -0 90" nodeId="504" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="136" name="dbl_slurrySpreaderUnfoldingUT5_SC" translation="0.002 -0.07 -0.053" rotation="180 -0 90" nodeId="505" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="137" name="dbl_slurrySpreaderUnfoldetUT5_SC" translation="0.002 -0.0699645 -0.0543505" rotation="180 0 90" nodeId="506" materialIds="22" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_soilTypePrecFarmingUT5_SC" translation="0.003 -0.129 0.013" rotation="90 5.12264e-06 90" nodeId="507"/>
+                <TransformGroup name="dbl_applicationRatePrecFarmingUT5_SC" translation="0.00200003 -0.046 0.002" rotation="90 5.12264e-06 90" nodeId="508"/>
+                <TransformGroup name="dbl_nActualPrecFarmingUT5_SC" translation="0.00200003 -0.135 0" rotation="90 5.12264e-06 90" nodeId="509"/>
+                <TransformGroup name="dbl_nTargetPrecFarmingUT5_SC" translation="0.00200003 -0.103 0" rotation="90 5.12264e-06 90" nodeId="510"/>
+              </TransformGroup>
+              <TransformGroup name="kotteGarantPTScreen" nodeId="511">
+                <Shape shapeId="87" name="dbl_kotteGarantScreenUT5_SC" translation="0.00123015 -0.047 0.00300161" rotation="179.6 0 90" nodeId="512" materialIds="22" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="kroneEasyCutUT6IB" nodeId="513">
+              <TransformGroup name="kroneEasyCutIconSet" nodeId="514">
+                <Shape shapeId="138" name="dbl_workModeOnUT6_SC" translation="0.00200004 0.00950224 0.0557527" rotation="180 0 90" nodeId="515" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="139" name="dbl_workModeOffUT6_SC" translation="0.00200002 0.0322438 0.0557565" rotation="180 0 90" nodeId="516" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="140" name="dbl_frontFoldingStatusUT6_SC" translation="0.00200001 0.00964961 0.0328321" rotation="180 0 90" nodeId="517" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="141" name="dbl_frontFoldedUT6_SC" translation="0.00244358 0.00999999 0.0290008" rotation="-180 1.70755e-06 90" nodeId="518" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="142" name="dbl_frontFoldingUT6_SC" translation="0.00228888 0.00999993 0.029001" rotation="-180 1.28066e-06 90" nodeId="519" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="143" name="dbl_frontUnfoldedUT6_SC" translation="0.00225176 0.0099999 0.0290005" rotation="-180 1.28066e-06 90" nodeId="520" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="144" name="dbl_frontUnfoldingUT6_SC" translation="0.00225176 0.0099999 0.0290005" rotation="-180 1.28066e-06 90" nodeId="521" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="145" name="dbl_frontMotionStatusUT6_SC" translation="0.00200001 0.0323511 0.032896" rotation="180 0 90" nodeId="522" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="146" name="dbl_frontMowerUpUT6_SC" translation="0.00231303 0.0319999 0.0280006" rotation="-180 1.28066e-06 90" nodeId="523" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="147" name="dbl_frontMowerDownUT6_SC" translation="0.00235205 0.032 0.028" rotation="180 -0 90" nodeId="524" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="148" name="dbl_backFoldingStatusUT6_SC" translation="0.002 0.00950009 0.0097361" rotation="180 0 90" nodeId="525" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="141" name="dbl_backFoldedUT6_SC" translation="0.00244361 0.00999996 0.003" rotation="-180 2.98821e-06 90" nodeId="526" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="142" name="dbl_backFoldingUT6_SC" translation="0.00228892 0.00999993 0.003" rotation="-180 2.13443e-06 90" nodeId="527" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="143" name="dbl_backUnfoldedUT6_SC" translation="0.00225174 0.00999981 0.003" rotation="-180 2.13443e-06 90" nodeId="528" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="144" name="dbl_backUnfoldingUT6_SC" translation="0.00225174 0.00999987 0.003" rotation="-180 1.28066e-06 90" nodeId="529" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="149" name="dbl_backMotionStatusUT6_SC" translation="0.002 0.0322384 0.00994095" rotation="180 0 90" nodeId="530" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="146" name="dbl_backMowerUpUT6_SC" translation="0.00231302 0.0319999 0.006" rotation="-180 1.28066e-06 90" nodeId="531" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="147" name="dbl_backMowerDownUT6_SC" translation="0.00235204 0.032 0.006" rotation="-180 4.26887e-07 90" nodeId="532" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="150" name="dbl_leftMotionStatusUT6_SC" translation="0.00199999 0.00960591 -0.0131789" rotation="180 0 90" nodeId="533" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="151" name="dbl_rightMotionStatusUT6_SC" translation="0.00199999 0.0323144 -0.0129758" rotation="180 0 90" nodeId="534" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="152" name="dbl_leftSlideStatusUT6_SC" translation="0.00199999 0.00973022 -0.0362526" rotation="180 0 90" nodeId="535" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="153" name="dbl_rightSlideStatusUT6_SC" translation="0.00199998 0.0324631 -0.0362093" rotation="180 0 90" nodeId="536" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="154" name="dbl_hlmOnOffUT6_SC" translation="0.00199997 0.0097959 -0.0594402" rotation="180 0 90" nodeId="537" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="33" name="dbl_hlmOnOffButtonUT_SC" translation="0.00211217 0.00980191 -0.0586615" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="538" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="155" name="dbl_hlmActiveUT6_SC" translation="0.00199996 0.0324207 -0.0593501" rotation="180 0 90" nodeId="539" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="34" name="dbl_fieldModeUT6_SC" translation="0.00214923 0.0326082 -0.0587212" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="540" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="35" name="dbl_headlandModeUT6_SC" translation="0.00219426 0.0326097 -0.0586064" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="541" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="10" name="dbl_backPTOUT6_SC" translation="0.002 -0.0421692 0.000606277" rotation="180 0 90" scale="2.8 1 2.8" clipDistance="20" nodeId="542" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_backPTORpmUT6_SC" translation="0.00200001 -0.01 -0.004" rotation="90 5.12264e-06 90" nodeId="543"/>
+                <Shape shapeId="10" name="dbl_frontPTOUT6_SC" translation="0.00200002 -0.12898 0.000606277" rotation="180 0 90" scale="2.8 1 2.8" clipDistance="20" nodeId="544" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_frontPTORpmUT6_SC" translation="0.00200001 -0.096 -0.004" rotation="90 5.12264e-06 90" nodeId="545"/>
+                <Shape shapeId="31" name="dbl_gpsSatellitUT6_SC" translation="0.00200003 -0.106314 0.0594438" rotation="180 0 90" scale="3 1 3" clipDistance="20" nodeId="546" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="32" name="dbl_gpsActiveUT6_SC" translation="0.00200001 -0.0345775 0.0586426" rotation="180 0 90" scale="3 1 3" clipDistance="20" nodeId="547" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_gpsWidthUT6_SC" translation="0.00200001 -0.0146744 0.0519447" rotation="90 5.12264e-06 90" nodeId="548"/>
+                <TransformGroup name="dbl_gpsLaneUT6_SC" translation="0.00200001 -0.127054 0.0519447" rotation="90 5.12264e-06 90" nodeId="549"/>
+                <Shape shapeId="30" name="dbl_gpsLaneMinusUT6_SC" translation="0.002 -0.127 0.0602558" rotation="180 0 90" clipDistance="20" nodeId="550" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="29" name="dbl_gpsLanePlusUT6_SC" translation="0.002 -0.127 0.0603293" rotation="180 0 90" clipDistance="20" nodeId="551" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="12" name="dbl_frontConnctedUT6_SC" translation="0.00200001 -0.0717964 0.01664" rotation="180 0 90" scale="1.3 1 1.3" clipDistance="20" nodeId="552" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="12" name="dbl_backConnctedUT6_SC" translation="0.00200001 -0.0677893 -0.0118063" rotation="180 0 90" scale="1.3 1 1.3" clipDistance="20" nodeId="553" materialIds="25" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="kroneEasyCutScreen" nodeId="554">
+                <Shape shapeId="87" name="dbl_kroneEasyCutScreenUT6_SC" translation="0.0012115 -0.047 0.00300111" rotation="179.7 0 90" nodeId="555" materialIds="20" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="kroneRXUT7IB" nodeId="556">
+              <TransformGroup name="kroneRXIconSet" nodeId="557">
+                <Shape shapeId="156" name="dbl_workModeOnOffUT7_SC" translation="0.00200001 0.01 0.0549179" rotation="180 0 90" nodeId="558" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="157" name="dbl_steeringAxisUT7_SC" translation="0.002 0.032 0.0549619" rotation="180 0 90" nodeId="559" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="12" name="dbl_steeringAxisLockUT7_SC" translation="0.00233499 0.0350398 0.0551066" rotation="180 -0 90" clipDistance="20" nodeId="560" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="158" name="dbl_liftAxisUpUT7_SC" translation="0.00200001 0.01 0.0324539" rotation="180 0 90" nodeId="561" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="159" name="dbl_liftAxisDownUT7_SC" translation="0.00200001 0.032 0.0324311" rotation="180 0 90" nodeId="562" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="160" name="dbl_drawbarUpUT7_SC" translation="0.002 0.01 0.0100178" rotation="180 0 90" nodeId="563" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="161" name="dbl_drawbarDownUT7_SC" translation="0.002 0.032 0.010114" rotation="180 0 90" nodeId="564" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="162" name="dbl_pickupUpUT7_SC" translation="0.002 0.01 -0.0125419" rotation="180 0 90" nodeId="565" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="163" name="dbl_pickupDownUT7_SC" translation="0.002 0.032 -0.0124001" rotation="180 0 90" nodeId="566" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="164" name="dbl_backDoorOpenUT7_SC" translation="0.00199999 0.01 -0.0352653" rotation="180 0 90" nodeId="567" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="165" name="dbl_backDoorCloseUT7_SC" translation="0.00199999 0.032 -0.0353751" rotation="180 0 90" nodeId="568" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="166" name="dbl_frontFlapOpenUT7_SC" translation="0.00199999 0.01 -0.0581338" rotation="180 0 90" nodeId="569" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="167" name="dbl_frontFlapCloseUT7_SC" translation="0.00199999 0.032 -0.058241" rotation="180 0 90" nodeId="570" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="168" name="dbl_loadingWagonFullUT7_SC" translation="0.00200004 -0.119134 0.0399863" rotation="180 0 90" nodeId="571" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="169" name="dbl_loadingWagonAutoUT7_SC" translation="0.002 -0.0215371 -0.0411377" rotation="180 0 90" nodeId="572" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="170" name="dbl_fillLevelSliderUT7_SC" translation="0.00174648 -0.0691734 -0.00105143" rotation="-180 4.26887e-07 90" nodeId="573" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_fillLevelLWUT7_SC" translation="0.002 -0.0350626 0.0217547" rotation="90 5.54953e-06 90" nodeId="574"/>
+                <TransformGroup name="dbl_fillLevelTankUT7_SC" translation="0.00200003 -0.0802022 -0.0425705" rotation="90 5.97642e-06 90" nodeId="575"/>
+                <Shape shapeId="171" name="dbl_backRoll00UT7_SC" translation="0.00199997 -0.031 0.0037393" rotation="-180 0 90" nodeId="576" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="172" name="dbl_backRoll01UT7_SC" translation="0.002 -0.031 -0.0061233" rotation="-180 4.26887e-07 90" nodeId="577" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="173" name="dbl_fieldDefault00UT7_SC" translation="0.00199999 -0.0139309 -0.061" rotation="180 0 90" nodeId="578" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="174" name="dbl_fieldDefault01UT7_SC" translation="0.00200001 -0.0364657 -0.061" rotation="180 0 90" nodeId="579" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="175" name="dbl_workLightUT7_SC" translation="0.00200002 -0.0587436 -0.061" rotation="180 0 90" nodeId="580" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="86" name="dbl_workLightBackUT7_SC" translation="0.00212572 -0.0585785 -0.0613031" rotation="180 -0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="581" materialIds="24" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="176" name="dbl_ptoWorkUT7_SC" translation="0.00200003 -0.0810491 -0.061" rotation="180 0 90" nodeId="582" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="177" name="dbl_ptoWorkOnUT7_SC" translation="0.0021242 -0.0812808 -0.0568063" rotation="180 -0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="583" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_ptoRpmWorkUT7_SC" translation="0.00234894 -0.0811624 -0.068" rotation="90 5.97642e-06 90" nodeId="584"/>
+                <Shape shapeId="178" name="dbl_cruiseControlUT7_SC" translation="0.00200004 -0.103154 -0.061" rotation="180 0 90" nodeId="585" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="179" name="dbl_cruiseControlOnUT7_SC" translation="0.00214245 -0.102907 -0.0564897" rotation="180 -0 90" scale="2 1 2" clipDistance="20" nodeId="586" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="dbl_CruiseControlNumberUT7_SC" translation="0.00221801 -0.103118 -0.068" rotation="90 5.54953e-06 90" nodeId="587"/>
+                <TransformGroup name="dbl_timeNumbersUT7_SC" translation="0.002 -0.125563 -0.068" rotation="90 5.54953e-06 90" nodeId="588"/>
+              </TransformGroup>
+              <TransformGroup name="kroneRXScreen" nodeId="589">
+                <Shape shapeId="103" name="dbl_kroneRXScreenUT7_SC" translation="0.0012176 -0.047 0.00300114" rotation="179.7 0 90" nodeId="590" materialIds="20" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="brantnerDDTrailerUT8IB" nodeId="591">
+              <TransformGroup name="brantnerDDIconSet" nodeId="592">
+                <TransformGroup name="dbl_trailer1Set" nodeId="593">
+                  <Shape shapeId="180" name="dbl_trailer1IconUT8_SC" translation="0.00200002 -0.0751083 0.0283298" rotation="-180 4.26887e-07 90" nodeId="594" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="181" name="dbl_trailer1FillLevelSliderUT8_SC" translation="0.00200003 -0.0684478 0.0363758" rotation="-180 4.26887e-07 90" nodeId="595" materialIds="15" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="182" name="dbl_trailer1TipSideLeftUT8_SC" translation="0.002 -0.00282153 0.0178983" rotation="-180 4.26887e-07 90" nodeId="596" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="183" name="dbl_trailer1TipSideBackUT8_SC" translation="0.00200002 0.0159121 0.0177007" rotation="-180 4.26887e-07 90" nodeId="597" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="184" name="dbl_trailer1TipSideGrainDoorUT8_SC" translation="0.00199997 0.0156481 0.0176044" rotation="-180 4.26887e-07 90" nodeId="598" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="185" name="dbl_trailer1TipSideRightUT8_SC" translation="0.00199999 0.0343475 0.0175405" rotation="-180 4.26887e-07 90" nodeId="599" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="186" name="dbl_trailer1FillTypeIconUT8_SC" translation="0.00200002 0.0391571 0.0647571" rotation="-180 4.26887e-07 90" nodeId="600" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer1FillTypeUT8_SC" translation="0.002 -0.01 0.062" rotation="90 -0 90" nodeId="601"/>
+                  <Shape shapeId="187" name="dbl_trailer1FillLevelStatusIconUT8_SC" translation="0.00200005 0.0379109 0.053586" rotation="-180 4.26887e-07 90" nodeId="602" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="188" name="dbl_trailer1FillLevelBarStatusIconUT8_SC" translation="0.00215723 0.0379999 0.0536065" rotation="-180 4.26887e-07 90" nodeId="603" materialIds="15" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer1FillLevelNumberUT8_SC" translation="0.002 -0.01 0.047" rotation="90 -0 90" nodeId="604"/>
+                  <Shape shapeId="189" name="dbl_trailer1TipSideStatusUT8_SC" translation="0.00200003 0.0390731 0.0412219" rotation="-180 4.26887e-07 90" scale="2 1 2" clipDistance="20" nodeId="605" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer1TipSideUT8_SC" translation="0.00199994 -0.01 0.038" rotation="90 4.26887e-07 90" nodeId="606"/>
+                  <Shape shapeId="190" name="dbl_trailer1FillLevelSpringUT8_SC" translation="0.00200001 -0.0707586 0.00105375" rotation="180 0 90" nodeId="607" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer1FillLevelPercUT8_SC" translation="0.00199996 -0.089 0.00242564" rotation="90 4.26887e-07 90" nodeId="608"/>
+                  <Shape shapeId="189" name="dbl_trailer1TippingStatusUT8_SC" translation="0.00200003 -0.125 0.006" rotation="-180 4.26887e-07 90" scale="3 1 3" clipDistance="20" nodeId="609" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dbl_trailer2Set" nodeId="610">
+                  <Shape shapeId="180" name="dbl_trailer2IconUT8_SC" translation="0.002 -0.0751083 -0.0427477" rotation="-180 4.26887e-07 90" nodeId="611" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="181" name="dbl_trailer2FillLevelSliderUT8_SC" translation="0.002 -0.0684478 -0.0344959" rotation="-180 4.26887e-07 90" nodeId="612" materialIds="15" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="182" name="dbl_trailer2TipSideLeftUT8_SC" translation="0.00199995 -0.00282156 -0.0533871" rotation="-180 4.26887e-07 90" nodeId="613" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="183" name="dbl_trailer2TipSideBackUT8_SC" translation="0.00200002 0.0156355 -0.0532071" rotation="-180 4.26887e-07 90" nodeId="614" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="184" name="dbl_trailer2TipSideGrainDoorUT8_SC" translation="0.00199992 0.0152331 -0.0530292" rotation="-180 4.26887e-07 90" nodeId="615" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="185" name="dbl_trailer2TipSideRightUT8_SC" translation="0.00199998 0.0343475 -0.0534898" rotation="-180 4.26887e-07 90" nodeId="616" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="186" name="dbl_trailer2FillTypeIconUT8_SC" translation="0.00200005 0.0391571 -0.00580567" rotation="-180 4.26887e-07 90" nodeId="617" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer2FillTypeUT8_SC" translation="0.00199997 -0.0100001 -0.009" rotation="90 4.26887e-07 90" nodeId="618"/>
+                  <Shape shapeId="187" name="dbl_trailer2FillLevelStatusIconUT8_SC" translation="0.00200008 0.0379109 -0.0169637" rotation="-180 4.26887e-07 90" nodeId="619" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="188" name="dbl_trailer2FillLevelBarStatusIconUT8_SC" translation="0.00215726 0.0379999 -0.017168" rotation="-180 4.26887e-07 90" nodeId="620" materialIds="15" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer2FillLevelNumberUT8_SC" translation="0.00199994 -0.01 -0.024" rotation="90 4.26887e-07 90" nodeId="621"/>
+                  <Shape shapeId="189" name="dbl_trailer2TipSideStatusUT8_SC" translation="0.00200002 0.039073 -0.0296119" rotation="-180 1.28066e-06 90" scale="2 1 2" clipDistance="20" nodeId="622" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer2TipSideUT8_SC" translation="0.00199993 -0.01 -0.033" rotation="90 4.26887e-07 90" nodeId="623"/>
+                  <Shape shapeId="190" name="dbl_trailer2FillLevelSpringUT8_SC" translation="0.00199997 -0.0707586 -0.0699191" rotation="-180 4.26887e-07 90" nodeId="624" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="dbl_trailer2FillLevelPercUT8_SC" translation="0.00199995 -0.089 -0.0688051" rotation="90 4.26887e-07 90" nodeId="625"/>
+                  <Shape shapeId="189" name="dbl_trailer2TippingStatusUT8_SC" translation="0.00200002 -0.125 -0.065" rotation="-180 1.28066e-06 90" scale="3 1 3" clipDistance="20" nodeId="626" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="brantnerDDScreen" nodeId="627">
+                <Shape shapeId="103" name="dbl_brantnerDDTrailerScreenUT" translation="0.00117219 -0.047 0.0030009" rotation="179.7 -0 90" nodeId="628" materialIds="16" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="utScreen" nodeId="629">
+            <Shape shapeId="27" name="dashboardDisplayUT_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="630" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="dashboardDisplayUTDM_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="631" materialIds="14" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="utIconSet" rotation="-4.26887e-07 -0 3.41509e-06" nodeId="632">
+            <Shape shapeId="15" name="dbl_frontPLifterP3_SC" translation="0.000999972 0.055 0.0600002" rotation="180 3.41509e-07 90" scale="2.5 1 2.5" clipDistance="20" nodeId="633" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="dbl_frontPLifterLevelbarUT1_SC" translation="0.001 0.0630001 0.0600002" rotation="-90 -90 0" nodeId="634" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontPLifterPercP3_SC" translation="0.00114148 0.137 0.0590003" rotation="90 8.53774e-07 90" clipDistance="15" nodeId="635"/>
+            <Shape shapeId="17" name="dbl_backPLifterP3_SC" translation="0.00128393 0.055 -0.0159998" rotation="-180 6.83019e-07 90" scale="2.5 1 2.5" clipDistance="20" nodeId="636" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="dbl_backPLifterLevelbarP3_SC" translation="0.00133592 0.0630001 -0.016" rotation="-90 -90 0" nodeId="637" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backPLifterPercP3_SC" translation="0.00145688 0.137 -0.018" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="638"/>
+            <Shape shapeId="18" name="dbl_frontFoldedP3_SC" translation="0.002 0.121 0.0362704" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="639" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="dbl_frontFoldingStateP3_SC" translation="0.002 0.121 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="640" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="dbl_frontUnfoldingP3_SC" translation="0.002 0.121 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="641" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontFoldingStatePercP3_SC" translation="0.00127675 0.137 0.023" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="642"/>
+            <Shape shapeId="18" name="dbl_backFoldedP3_SC" translation="0.002 0.121 -0.0406273" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="643" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="dbl_backFoldingStateP3_SC" translation="0.002 0.121 -0.041" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="644" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="dbl_backUnfoldingP3_SC" translation="0.002 0.121 -0.041" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="645" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backFoldingStatePercP3_SC" translation="0.00142346 0.137 -0.054" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="646"/>
+            <Shape shapeId="10" name="dbl_frontPtoP3_SC" translation="0.00132468 0.111424 0.0167097" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="647" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontPtoRpmP3_SC" translation="0.00130597 0.133 0.00858957" rotation="90 0 90" clipDistance="15" nodeId="648"/>
+            <Shape shapeId="10" name="dbl_backPtoP3_SC" translation="0.00172791 0.111494 -0.0598808" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="649" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backPtoRpmP3_SC" translation="0.0045735 0.132962 -0.0672665" rotation="86.504 2.35198 89.3667" clipDistance="15" nodeId="650"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="flDashboard" nodeId="651">
+          <TransformGroup name="flIcon" nodeId="652">
+            <Shape shapeId="1" name="dbl_beaconLightP4_SC" translation="0.00199999 -0.0840001 -0.0149999" rotation="-180 6.56749e-07 90" scale="1.3 1 1.3" nodeId="653" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="dbl_defaultLightFrontP4_SC" translation="0.00200005 -0.131 -0.0419998" rotation="-180 9.85123e-07 90" scale="1.3 1 1.3" nodeId="654" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront00P4_SC" translation="0.00200003 -0.105678 -0.017" rotation="-180 9.85123e-07 90" scale="1.3 1 1.3" nodeId="655" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront01P4_SC" translation="0.0019999 -0.0990001 -0.02" rotation="-180 1.3135e-06 90" scale="1.3 1 1.3" nodeId="656" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront02P4_SC" translation="0.002 -0.0990001 -0.0319998" rotation="-180 1.97025e-06 90" scale="1.3 1 1.3" nodeId="657" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront03P4_SC" translation="0.00199994 -0.106 -0.033" rotation="-180 2.29862e-06 90" scale="1.3 1 1.3" nodeId="658" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dbl_workLightFront04P4_SC" translation="0.00199994 -0.101 -0.0385568" rotation="-180 2.95537e-06 90" scale="1.3 1 1.3" nodeId="659" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dbl_workLightBack00P4_SC" translation="0.00199996 -0.0740001 -0.0189996" rotation="-180 9.85123e-07 90" scale="1.3 1 1.3" nodeId="660" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dbl_workLightBack01P4_SC" translation="0.00199994 -0.0720001 -0.0279996" rotation="-180 1.3135e-06 90" scale="1.3 1 1.3" nodeId="661" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dbl_workLightBack02P4_SC" translation="0.00199996 -0.0640001 -0.0319998" rotation="-180 1.97025e-06 90" scale="1.3 1 1.3" nodeId="662" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="dbl_LoadBarSpeedP4_SC" translation="0.00200002 -0.000344387 0.0545294" rotation="4.26887e-07 -4.26887e-07 -90" scale="0.34 1 0.34" nodeId="663" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersSpeedP4_SC" translation="0.002 0 0.052" rotation="90 0 90" nodeId="664"/>
+            <Shape shapeId="6" name="dbl_CruiseControl01P4_SC" translation="0.002 -0.034 0.062" rotation="180 -3.84198e-06 90" scale="2 1 2" clipDistance="20" nodeId="665" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="dbl_CruiseControl02P4_SC" translation="0.002 0.032 0.062" rotation="-180 -4.69575e-06 90" scale="2 1 2" clipDistance="20" nodeId="666" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersCruiseControl01P4_SC" translation="0.00200003 -0.034 0.047" rotation="90 0 90" nodeId="667"/>
+            <TransformGroup name="dbl_NumbersCruiseControl02P4_SC" translation="0.002 0.032 0.047" rotation="90 0 90" nodeId="668"/>
+            <Shape shapeId="8" name="dbl_FueltankP4_SC" translation="0.002 -0.018 0.00929356" rotation="-180 -4.49355e-06 90" scale="1.9 1 1.9" clipDistance="20" nodeId="669" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersFuelContentP4_SC" translation="0.002 -0.013 0.00686565" rotation="90 0 90" nodeId="670"/>
+            <TransformGroup name="dbl_CruiseControlIconRot" translation="0.002 -0.000458657 0.0548163" rotation="45 -0 0" nodeId="671">
+              <Shape shapeId="9" name="dbl_CruiseControlRotP4_SC" translation="5.16167e-17 0 0" clipDistance="20" nodeId="672" materialIds="27" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Shape shapeId="10" name="dbl_frontPtoP4_SC" translation="0.002 -0.074 0.0162342" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="673" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="dbl_backPtoP4_SC" translation="0.002 0.111356 0.016681" rotation="0 180 -90" scale="1.7 1.7 1.7" clipDistance="20" nodeId="674" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontPtoRpmP4_SC" translation="0.002 -0.053 0.00858957" rotation="90 0 90" clipDistance="15" nodeId="675"/>
+            <TransformGroup name="dbl_backPtoRpmP4_SC" translation="0.002 0.133475 0.00887498" rotation="90.0001 0 89.9997" clipDistance="15" nodeId="676"/>
+            <Shape shapeId="11" name="dbl_frontDiffP4_SC" translation="0.00199999 0.008 0.028" rotation="180 0 90" scale="3.8 1 3.8" clipDistance="20" nodeId="677" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_frontDiffLockP4_SC" translation="0.00200001 0.008 0.0346776" rotation="180 -0 90" clipDistance="20" nodeId="678" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="dbl_awdDiffP4_SC" translation="0.002 0.022 0.028" rotation="180 0 90" scale="3.8 1 3.8" clipDistance="20" nodeId="679" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_awdFrontDiffLockP4_SC" translation="0.00200002 0.022 0.0347432" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="680" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_awdMiddleDiffLockP4_SC" translation="0.00199999 0.022 0.0282706" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="681" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_awdBackDiffLockP4_SC" translation="0.00199999 0.022 0.0216878" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="682" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="dbl_backDiffP4_SC" translation="0.00200001 0.036 0.028" rotation="180 0 90" scale="3.8 1 3.8" clipDistance="20" nodeId="683" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="dbl_backDiffLockP4_SC" translation="0.002 0.0354365 0.0216427" rotation="-180 4.26887e-07 90" clipDistance="20" nodeId="684" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="dbl_frontPLifterP4_SC" translation="0.001 -0.131 0.06" rotation="-180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="685" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="dbl_frontPLifterLevelbarP4_SC" translation="0.00100002 -0.123665 0.0600009" rotation="-90 -90 0" nodeId="686" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontPLifterPercP4_SC" translation="0.00199999 -0.049 0.059" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="687"/>
+            <Shape shapeId="17" name="dbl_backPLifterP4_SC" translation="0.001 0.055 0.06" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="688" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="dbl_backPLifterLevelbarP4_SC" translation="0.001 0.0630001 0.0600007" rotation="-90 -90 0" nodeId="689" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backPLifterPercP4_SC" translation="0.00199999 0.137 0.059" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="690"/>
+            <Shape shapeId="18" name="dbl_frontFoldedP4_SC" translation="0.002 -0.065 0.0363583" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="691" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="dbl_frontFoldingStateP4_SC" translation="0.002 -0.065 0.0359698" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="692" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="dbl_frontUnfoldingP4_SC" translation="0.002 -0.065 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="693" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_frontFoldingStatePercP4_SC" translation="0.00199999 -0.049 0.023" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="694"/>
+            <Shape shapeId="18" name="dbl_backFoldedP4_SC" translation="0.002 0.121 0.0363075" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="695" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="dbl_backFoldingStateP4_SC" translation="0.002 0.121 0.0359171" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="696" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="dbl_backUnfoldingP4_SC" translation="0.002 0.121 0.036" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="697" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_backFoldingStatePercP4_SC" translation="0.00199999 0.137 0.023" rotation="90 4.26887e-07 90" clipDistance="15" nodeId="698"/>
+            <Shape shapeId="21" name="dbl_selectFendtP4_SC" translation="0.002 0.022 0.00940858" rotation="180 0 90" scale="1.9 1 1.9" clipDistance="20" nodeId="699" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="dbl_selectFront1P4_SC" translation="0.002 0.013 0.0075" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="700" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="dbl_selectFront2P4_SC" translation="0.002 0.0062 0.0075" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="701" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="dbl_selectBack1P4_SC" translation="0.002 0.031 0.0075" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="702" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="dbl_selectBack2P4_SC" translation="0.002 0.038 0.0075" rotation="180 0 90" scale="1.4 1 1.4" clipDistance="20" nodeId="703" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="dbl_adBlueP4_SC" translation="0.002 -0.041 0.009" rotation="180 0 90" scale="1.8 1 1.8" clipDistance="20" nodeId="704" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersAdBlueContentP4_SC" translation="0.002 -0.0364914 0.00686565" rotation="90 0 90" nodeId="705"/>
+            <Shape shapeId="25" name="dbl_workTimeP4_SC" translation="0.002 -0.034 0.03" rotation="180 0 90" scale="2.5 1 2.5" clipDistance="20" nodeId="706" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersWorkTimeP4_SC" translation="0.002 -0.034 0.016" rotation="90 0 90" nodeId="707"/>
+            <Shape shapeId="26" name="dbl_fronSlipP4_SC" translation="0.002 -0.012 0.03" rotation="180 0 90" scale="4 1 4" clipDistance="20" nodeId="708" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="dbl_NumbersSlipP4_SC" translation="0.002 -0.012 0.016" rotation="90 0 90" nodeId="709"/>
+            <TransformGroup name="dbl_frontloaderAngleP4_SC" translation="0.00199999 0.0358396 -0.064" rotation="90 0 90" nodeId="710"/>
+            <TransformGroup name="dbl_frontloaderToolAngleP4_SC" translation="0.002 -0.004 -0.028" rotation="90 0 90" nodeId="711"/>
+            <TransformGroup name="dbl_numberFrontloaderToolFillLevelPctP4_SC" translation="0.00200005 -0.045 -0.052" rotation="90 4.26887e-07 90" nodeId="712"/>
+            <TransformGroup name="dbl_numberFrontloaderToolFillLevelLP4_SC" translation="0.002 -0.045 -0.06" rotation="90 0 90" nodeId="713"/>
+            <TransformGroup name="dbl_numberFrontloaderToolFillLevelKGP4_SC" translation="0.00200002 -0.045 -0.068" rotation="90 4.26887e-07 90" nodeId="714"/>
+            <Shape shapeId="191" name="dbl_frontloaderSliderP4_SC" translation="0.0014586 -0.00340181 -0.0673736" rotation="0 0 -90" nodeId="715" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="192" name="dbl_frontloaderToolSliderP4_SC" translation="0.00150989 -0.04263 -0.0148439" rotation="0 -0 -90" nodeId="716" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="193" name="dbl_frontloaderArmRotP4_SC" translation="0.00416626 0.036 -0.062" rotation="180 -11 89.9996" nodeId="717" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="194" name="dbl_frontloaderToolRotP4_SC" translation="0.002 -0.009 -0.026" rotation="180 -40 90" nodeId="718" materialIds="9" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="195" name="dbl_frontloaderToolFillLevelP4_SC" translation="0.00272578 0.000137145 -0.00945815" rotation="-180 -1.10617 -180" scale="0.818 1 0.855" nodeId="719" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="196" name="dbl_frontloaderSelectP4_SC" translation="0.002 0.0164469 0.0105222" rotation="180 25 90" scale="1.5 1 1.5" clipDistance="20" nodeId="720" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="197" name="dbl_frontloaderToolSelectP4_SC" translation="0.00199999 0.00996031 0.0112784" rotation="180 0 90" scale="0.85 1 0.85" clipDistance="20" nodeId="721" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="198" name="dbl_frontloaderArmGroundPosP2_SC" translation="0.00159167 0.000608825 -0.0619316" rotation="180 9 90" scale="1.5 1 1.2" clipDistance="20" nodeId="722" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="198" name="dbl_frontloaderToolGroundPosP2_SC" translation="0.00159168 -0.0346935 -0.0306428" rotation="180 -30 90" scale="1.5 1 1.2" clipDistance="20" nodeId="723" materialIds="25" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="flScreen" nodeId="724">
+            <Shape shapeId="27" name="dashboardDisplayFL_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="725" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="dashboardDisplayFLDM_SC" translation="0.001 0 0" rotation="0 0 -90" nodeId="726" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="242">
+      <Attribute name="MaxHandle" type="integer" value="189"/>
+    </UserAttribute>
+    <UserAttribute nodeId="243">
+      <Attribute name="MaxHandle" type="integer" value="190"/>
+    </UserAttribute>
+    <UserAttribute nodeId="246">
+      <Attribute name="MaxHandle" type="integer" value="39"/>
+    </UserAttribute>
+    <UserAttribute nodeId="250">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="251">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="254">
+      <Attribute name="MaxHandle" type="integer" value="183"/>
+    </UserAttribute>
+    <UserAttribute nodeId="255">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="256">
+      <Attribute name="MaxHandle" type="integer" value="184"/>
+    </UserAttribute>
+    <UserAttribute nodeId="257">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="258">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="259">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="260">
+      <Attribute name="MaxHandle" type="integer" value="181"/>
+    </UserAttribute>
+    <UserAttribute nodeId="261">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="262">
+      <Attribute name="MaxHandle" type="integer" value="176"/>
+    </UserAttribute>
+    <UserAttribute nodeId="265">
+      <Attribute name="MaxHandle" type="integer" value="177"/>
+    </UserAttribute>
+    <UserAttribute nodeId="268">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="269">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="270">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="273">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="274">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="276">
+      <Attribute name="MaxHandle" type="integer" value="201"/>
+    </UserAttribute>
+    <UserAttribute nodeId="277">
+      <Attribute name="MaxHandle" type="integer" value="172"/>
+    </UserAttribute>
+    <UserAttribute nodeId="278">
+      <Attribute name="MaxHandle" type="integer" value="172"/>
+    </UserAttribute>
+    <UserAttribute nodeId="279">
+      <Attribute name="MaxHandle" type="integer" value="173"/>
+    </UserAttribute>
+    <UserAttribute nodeId="280">
+      <Attribute name="MaxHandle" type="integer" value="173"/>
+    </UserAttribute>
+    <UserAttribute nodeId="281">
+      <Attribute name="MaxHandle" type="integer" value="170"/>
+    </UserAttribute>
+    <UserAttribute nodeId="283">
+      <Attribute name="MaxHandle" type="integer" value="202"/>
+    </UserAttribute>
+    <UserAttribute nodeId="285">
+      <Attribute name="MaxHandle" type="integer" value="112"/>
+    </UserAttribute>
+    <UserAttribute nodeId="287">
+      <Attribute name="MaxHandle" type="integer" value="189"/>
+    </UserAttribute>
+    <UserAttribute nodeId="288">
+      <Attribute name="MaxHandle" type="integer" value="190"/>
+    </UserAttribute>
+    <UserAttribute nodeId="295">
+      <Attribute name="MaxHandle" type="integer" value="189"/>
+    </UserAttribute>
+    <UserAttribute nodeId="296">
+      <Attribute name="MaxHandle" type="integer" value="190"/>
+    </UserAttribute>
+    <UserAttribute nodeId="297">
+      <Attribute name="MaxHandle" type="integer" value="191"/>
+    </UserAttribute>
+    <UserAttribute nodeId="307">
+      <Attribute name="MaxHandle" type="integer" value="197"/>
+    </UserAttribute>
+    <UserAttribute nodeId="308">
+      <Attribute name="MaxHandle" type="integer" value="196"/>
+    </UserAttribute>
+    <UserAttribute nodeId="312">
+      <Attribute name="MaxHandle" type="integer" value="168"/>
+    </UserAttribute>
+    <UserAttribute nodeId="313">
+      <Attribute name="MaxHandle" type="integer" value="195"/>
+    </UserAttribute>
+    <UserAttribute nodeId="315">
+      <Attribute name="MaxHandle" type="integer" value="94"/>
+    </UserAttribute>
+    <UserAttribute nodeId="316">
+      <Attribute name="MaxHandle" type="integer" value="95"/>
+    </UserAttribute>
+    <UserAttribute nodeId="317">
+      <Attribute name="MaxHandle" type="integer" value="95"/>
+    </UserAttribute>
+    <UserAttribute nodeId="318">
+      <Attribute name="MaxHandle" type="integer" value="206"/>
+    </UserAttribute>
+    <UserAttribute nodeId="319">
+      <Attribute name="MaxHandle" type="integer" value="206"/>
+    </UserAttribute>
+    <UserAttribute nodeId="320">
+      <Attribute name="MaxHandle" type="integer" value="207"/>
+    </UserAttribute>
+    <UserAttribute nodeId="321">
+      <Attribute name="MaxHandle" type="integer" value="207"/>
+    </UserAttribute>
+    <UserAttribute nodeId="322">
+      <Attribute name="MaxHandle" type="integer" value="205"/>
+    </UserAttribute>
+    <UserAttribute nodeId="323">
+      <Attribute name="MaxHandle" type="integer" value="206"/>
+    </UserAttribute>
+    <UserAttribute nodeId="324">
+      <Attribute name="MaxHandle" type="integer" value="206"/>
+    </UserAttribute>
+    <UserAttribute nodeId="325">
+      <Attribute name="MaxHandle" type="integer" value="207"/>
+    </UserAttribute>
+    <UserAttribute nodeId="326">
+      <Attribute name="MaxHandle" type="integer" value="207"/>
+    </UserAttribute>
+    <UserAttribute nodeId="338">
+      <Attribute name="MaxHandle" type="integer" value="176"/>
+    </UserAttribute>
+    <UserAttribute nodeId="341">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="342">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="343">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="345">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="374">
+      <Attribute name="MaxHandle" type="integer" value="192"/>
+    </UserAttribute>
+    <UserAttribute nodeId="375">
+      <Attribute name="MaxHandle" type="integer" value="193"/>
+    </UserAttribute>
+    <UserAttribute nodeId="384">
+      <Attribute name="MaxHandle" type="integer" value="187"/>
+    </UserAttribute>
+    <UserAttribute nodeId="385">
+      <Attribute name="MaxHandle" type="integer" value="187"/>
+    </UserAttribute>
+    <UserAttribute nodeId="386">
+      <Attribute name="MaxHandle" type="integer" value="187"/>
+    </UserAttribute>
+    <UserAttribute nodeId="387">
+      <Attribute name="MaxHandle" type="integer" value="187"/>
+    </UserAttribute>
+    <UserAttribute nodeId="388">
+      <Attribute name="MaxHandle" type="integer" value="187"/>
+    </UserAttribute>
+    <UserAttribute nodeId="414">
+      <Attribute name="MaxHandle" type="integer" value="168"/>
+    </UserAttribute>
+    <UserAttribute nodeId="415">
+      <Attribute name="MaxHandle" type="integer" value="195"/>
+    </UserAttribute>
+    <UserAttribute nodeId="416">
+      <Attribute name="MaxHandle" type="integer" value="103"/>
+    </UserAttribute>
+    <UserAttribute nodeId="418">
+      <Attribute name="MaxHandle" type="integer" value="185"/>
+    </UserAttribute>
+    <UserAttribute nodeId="419">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="420">
+      <Attribute name="MaxHandle" type="integer" value="209"/>
+    </UserAttribute>
+    <UserAttribute nodeId="442">
+      <Attribute name="MaxHandle" type="integer" value="210"/>
+    </UserAttribute>
+    <UserAttribute nodeId="448">
+      <Attribute name="MaxHandle" type="integer" value="168"/>
+    </UserAttribute>
+    <UserAttribute nodeId="449">
+      <Attribute name="MaxHandle" type="integer" value="195"/>
+    </UserAttribute>
+    <UserAttribute nodeId="450">
+      <Attribute name="MaxHandle" type="integer" value="207"/>
+    </UserAttribute>
+    <UserAttribute nodeId="451">
+      <Attribute name="MaxHandle" type="integer" value="207"/>
+    </UserAttribute>
+    <UserAttribute nodeId="459">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="470">
+      <Attribute name="MaxHandle" type="integer" value="48"/>
+    </UserAttribute>
+    <UserAttribute nodeId="471">
+      <Attribute name="MaxHandle" type="integer" value="65"/>
+    </UserAttribute>
+    <UserAttribute nodeId="472">
+      <Attribute name="MaxHandle" type="integer" value="63"/>
+    </UserAttribute>
+    <UserAttribute nodeId="491">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="538">
+      <Attribute name="MaxHandle" type="integer" value="94"/>
+    </UserAttribute>
+    <UserAttribute nodeId="540">
+      <Attribute name="MaxHandle" type="integer" value="95"/>
+    </UserAttribute>
+    <UserAttribute nodeId="541">
+      <Attribute name="MaxHandle" type="integer" value="95"/>
+    </UserAttribute>
+    <UserAttribute nodeId="542">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="544">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="546">
+      <Attribute name="MaxHandle" type="integer" value="168"/>
+    </UserAttribute>
+    <UserAttribute nodeId="547">
+      <Attribute name="MaxHandle" type="integer" value="195"/>
+    </UserAttribute>
+    <UserAttribute nodeId="550">
+      <Attribute name="MaxHandle" type="integer" value="196"/>
+    </UserAttribute>
+    <UserAttribute nodeId="551">
+      <Attribute name="MaxHandle" type="integer" value="197"/>
+    </UserAttribute>
+    <UserAttribute nodeId="552">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="553">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="560">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="581">
+      <Attribute name="MaxHandle" type="integer" value="209"/>
+    </UserAttribute>
+    <UserAttribute nodeId="583">
+      <Attribute name="MaxHandle" type="integer" value="146"/>
+    </UserAttribute>
+    <UserAttribute nodeId="586">
+      <Attribute name="MaxHandle" type="integer" value="42"/>
+    </UserAttribute>
+    <UserAttribute nodeId="605">
+      <Attribute name="MaxHandle" type="integer" value="68"/>
+    </UserAttribute>
+    <UserAttribute nodeId="609">
+      <Attribute name="MaxHandle" type="integer" value="68"/>
+    </UserAttribute>
+    <UserAttribute nodeId="622">
+      <Attribute name="MaxHandle" type="integer" value="68"/>
+    </UserAttribute>
+    <UserAttribute nodeId="626">
+      <Attribute name="MaxHandle" type="integer" value="68"/>
+    </UserAttribute>
+    <UserAttribute nodeId="633">
+      <Attribute name="MaxHandle" type="integer" value="176"/>
+    </UserAttribute>
+    <UserAttribute nodeId="636">
+      <Attribute name="MaxHandle" type="integer" value="177"/>
+    </UserAttribute>
+    <UserAttribute nodeId="639">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="640">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="641">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="643">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="644">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="645">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="647">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="649">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="665">
+      <Attribute name="MaxHandle" type="integer" value="189"/>
+    </UserAttribute>
+    <UserAttribute nodeId="666">
+      <Attribute name="MaxHandle" type="integer" value="190"/>
+    </UserAttribute>
+    <UserAttribute nodeId="669">
+      <Attribute name="MaxHandle" type="integer" value="39"/>
+    </UserAttribute>
+    <UserAttribute nodeId="673">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="674">
+      <Attribute name="MaxHandle" type="integer" value="82"/>
+    </UserAttribute>
+    <UserAttribute nodeId="677">
+      <Attribute name="MaxHandle" type="integer" value="183"/>
+    </UserAttribute>
+    <UserAttribute nodeId="678">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="679">
+      <Attribute name="MaxHandle" type="integer" value="184"/>
+    </UserAttribute>
+    <UserAttribute nodeId="680">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="681">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="682">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="683">
+      <Attribute name="MaxHandle" type="integer" value="181"/>
+    </UserAttribute>
+    <UserAttribute nodeId="684">
+      <Attribute name="MaxHandle" type="integer" value="102"/>
+    </UserAttribute>
+    <UserAttribute nodeId="685">
+      <Attribute name="MaxHandle" type="integer" value="176"/>
+    </UserAttribute>
+    <UserAttribute nodeId="688">
+      <Attribute name="MaxHandle" type="integer" value="177"/>
+    </UserAttribute>
+    <UserAttribute nodeId="691">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="692">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="693">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="695">
+      <Attribute name="MaxHandle" type="integer" value="167"/>
+    </UserAttribute>
+    <UserAttribute nodeId="696">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="697">
+      <Attribute name="MaxHandle" type="integer" value="164"/>
+    </UserAttribute>
+    <UserAttribute nodeId="699">
+      <Attribute name="MaxHandle" type="integer" value="201"/>
+    </UserAttribute>
+    <UserAttribute nodeId="700">
+      <Attribute name="MaxHandle" type="integer" value="172"/>
+    </UserAttribute>
+    <UserAttribute nodeId="701">
+      <Attribute name="MaxHandle" type="integer" value="172"/>
+    </UserAttribute>
+    <UserAttribute nodeId="702">
+      <Attribute name="MaxHandle" type="integer" value="173"/>
+    </UserAttribute>
+    <UserAttribute nodeId="703">
+      <Attribute name="MaxHandle" type="integer" value="173"/>
+    </UserAttribute>
+    <UserAttribute nodeId="704">
+      <Attribute name="MaxHandle" type="integer" value="170"/>
+    </UserAttribute>
+    <UserAttribute nodeId="706">
+      <Attribute name="MaxHandle" type="integer" value="202"/>
+    </UserAttribute>
+    <UserAttribute nodeId="708">
+      <Attribute name="MaxHandle" type="integer" value="112"/>
+    </UserAttribute>
+    <UserAttribute nodeId="720">
+      <Attribute name="MaxHandle" type="integer" value="203"/>
+    </UserAttribute>
+    <UserAttribute nodeId="721">
+      <Attribute name="MaxHandle" type="integer" value="204"/>
+    </UserAttribute>
+    <UserAttribute nodeId="722">
+      <Attribute name="MaxHandle" type="integer" value="126"/>
+    </UserAttribute>
+    <UserAttribute nodeId="723">
+      <Attribute name="MaxHandle" type="integer" value="126"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

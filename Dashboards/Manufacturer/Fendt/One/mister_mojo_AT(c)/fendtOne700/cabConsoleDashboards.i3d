@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cabConsoleDashboards.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="../../FS22_DashboardLive/shader/minimap.xml"/>
+    <File fileId="8" filename="../textures/fendtNavi.dds"/>
+    <File fileId="5" filename="../textures/fendtOneCabDisplayLCDBasicDM_diffuse.png"/>
+    <File fileId="1" filename="../textures/fendtOneCabDisplayLCDBasic_diffuse.png"/>
+    <File fileId="9" filename="../textures/fendtOneCabDisplayLCDNavi_diffuse.png"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="3" filename="$data/shared/default_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fendtOneCabDisplay_mat" materialId="5" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneCabDisplay_mat" materialId="6" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="5"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fendtOneCabDisplay_mat" materialId="7" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="9"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="miniMap" materialId="8" customShaderId="7">
+    </Material>
+    <Material name="miniMap" materialId="9" diffuseColor="1 1 1 1" customShaderId="7">
+    </Material>
+    <Material name="miniMap_marker" materialId="10" customShaderId="4">
+      <Texture fileId="8"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cabConsoleDashboards.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="cabDashboard" translation="-0.593 1.419 -0.822" rotation="-175.178 81.77 178.753" nodeId="16">
+        <TransformGroup name="basicDashboard" nodeId="17">
+          <TransformGroup name="basicIcon" nodeId="18"/>
+          <TransformGroup name="basicScreen" nodeId="19">
+            <Shape shapeId="1" name="dashboardDisplayBasic_CC" rotation="90 -0 -90" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="dashboardDisplayBasicDM_CC" rotation="90 -0 -90" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="basicTaskTopIcon" nodeId="22"/>
+          <TransformGroup name="basicNaviMap" nodeId="23">
+            <Shape shapeId="2" name="dbl_naviMapPlaneP1_CC" translation="-0.047073 0.0372649 0.00100001" rotation="90 -1.70755e-06 1.28066e-06" nodeId="24" materialIds="9" distanceBlending="false">
+              <Shape shapeId="3" name="dbl_naviPositionP1_CC" translation="0 0.001 0" nodeId="25" materialIds="10" distanceBlending="false"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="naviDashboard" nodeId="26">
+          <TransformGroup name="naviIcon" nodeId="27"/>
+          <TransformGroup name="naviScreen" nodeId="28">
+            <Shape shapeId="1" name="dashboardDisplayNavi_CC" rotation="90 -0 -90" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="naviMap" nodeId="30">
+            <Shape shapeId="4" name="dbl_naviMapPlaneP2_CC" translation="-0.047 -0.000488717 0.001" rotation="90 -6.83019e-06 8.53774e-07" scale="0.183 1 0.136" nodeId="31" materialIds="8" distanceBlending="false">
+              <Shape shapeId="3" name="dbl_naviPositionP2_CC" translation="0 0.001 0" rotation="0 -1.40616e-06 -1.24992e-06" scale="10 1 13" nodeId="32" materialIds="10" distanceBlending="false"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
